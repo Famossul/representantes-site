@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Representantes</title>
+  <style>
+    :root {
+      --cor-fundo: #e1e4e1;
+      --cor-caixa: #ffffff;
+      --cor-texto: #333;
+      --cor-destaque: #2c3e50;
+      --cor-borda: #ddd;
+    }
+
+    body {
+      margin: 0;
+      padding: 1rem;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--cor-fundo);
+      color: var(--cor-texto);
+    }
+
+    .container {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 1rem;
+      background-color: var(--cor-caixa);
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      text-align: center;
+      color: var(--cor-destaque);
+      margin-bottom: 1rem;
+    }
+
+    label {
+      font-weight: bold;
+      margin-top: 1rem;
+      display: block;
+    }
+
+    select {
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      border: 1px solid var(--cor-borda);
+      border-radius: 6px;
+      background-color: #fff;
+    }
+
+    #contato {
+      margin-top: 2rem;
+    }
+
+    .representante {
+      padding: 1rem;
+      margin-bottom: 1rem;
+      background-color: #f0f4f8;
+      border-radius: 6px;
+      border-left: 4px solid var(--cor-destaque);
+    }
+
+    .representante strong {
+      font-size: 1.1rem;
+      color: var(--cor-destaque);
+    }
+
+    .representante span {
+      display: block;
+      margin-top: 0.3rem;
+      font-size: 0.95rem;
+    }
+
+    .logo {
+    text-align: center;
+    margin-bottom: 1rem;
+    }
+
+    .logo img {
+    max-width: 180px;
+    height: auto;
+    }   
+
+    @media (min-width: 600px) {
+      .container {
+        max-width: 500px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="img/Logo.png" alt="Logo da empresa" />
+    </div>
+    <h1>Representantes</h1>
+
+    <label for="regiao">Região:</label>
+    <select id="regiao" onchange="carregarEstados()">
+      <option value="">Selecione uma região</option>
+    </select>
+
+    <label for="estado">Estado:</label>
+    <select id="estado" onchange="carregarCidades()">
+      <option value="">Selecione um estado</option>
+    </select>
+
+    <label for="cidade">Cidade:</label>
+    <select id="cidade" onchange="mostrarContato()">
+      <option value="">Selecione uma cidade</option>
+    </select>
+
+    <div id="contato"></div>
+  </div>
+
+  <script>
+    let dados = {};
+
+    fetch('representantes.json')
+      .then(res => res.json())
+      .then(json => {
+        dados = json;
+        const regiaoSelect = document.getElementById("regiao");
+        Object.keys(dados).forEach(regiao => {
+          const opt = document.createElement("option");
+          opt.value = regiao;
+          opt.textContent = regiao;
+          regiaoSelect.appendChild(opt);
+        });
+      });
+
+    function carregarEstados() {
+      const regiao = document.getElementById("regiao").value;
+      const estadoSelect = document.getElementById("estado");
+      estadoSelect.innerHTML = '<option value="">Selecione um estado</option>';
+      document.getElementById("cidade").innerHTML = '<option value="">Selecione uma cidade</option>';
+      document.getElementById("contato").innerHTML = "";
+
+      if (regiao && dados[regiao]) {
+        Object.keys(dados[regiao]).forEach(estado => {
+          const opt = document.createElement("option");
+          opt.value = estado;
+          opt.textContent = estado;
+          estadoSelect.appendChild(opt);
+        });
+      }
+    }
+
+    function carregarCidades() {
+      const regiao = document.getElementById("regiao").value;
+      const estado = document.getElementById("estado").value;
+      const cidadeSelect = document.getElementById("cidade");
+      cidadeSelect.innerHTML = '<option value="">Selecione uma cidade</option>';
+      document.getElementById("contato").innerHTML = "";
+
+      if (regiao && estado && dados[regiao][estado]) {
+        Object.keys(dados[regiao][estado]).forEach(cidade => {
+          const opt = document.createElement("option");
+          opt.value = cidade;
+          opt.textContent = cidade;
+          cidadeSelect.appendChild(opt);
+        });
+      }
+    }
+
+    function mostrarContato() {
+      const regiao = document.getElementById("regiao").value;
+      const estado = document.getElementById("estado").value;
+      const cidade = document.getElementById("cidade").value;
+      const div = document.getElementById("contato");
+      div.innerHTML = "";
+
+      if (regiao && estado && cidade && dados[regiao][estado][cidade]) {
+        dados[regiao][estado][cidade].forEach(rep => {
+          const bloco = document.createElement("div");
+          bloco.className = "representante";
+          bloco.innerHTML = `
+            <strong>${rep.nome}</strong>
+            <span>📞 ${rep.telefone}</span>
+            ${rep.email ? `<span>📧 ${rep.email}</span>` : ""}
+          `;
+          div.appendChild(bloco);
+        });
+      }
+    }
+  </script>
+</body>
+</html>

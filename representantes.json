@@ -1,0 +1,383 @@
+{
+  "Sudeste": {
+    "SP": {
+      "São José dos Campos": [
+        {
+          "nome": "Iza - ZKS Representações",
+          "telefone": "12 99735-0400",
+          "email": ""
+        },
+        {
+          "nome": "Ana Carolina - ZKS Representações",
+          "telefone": "12 99671-7480",
+          "email": "comercial@zksfechaduras.com.br"
+        }
+      ],
+      "Americana": [
+        {
+          "nome": "André - EcoShowroom",
+          "telefone": "19 98104-2804",
+          "email": "andre@ecoshowroom.com.br"
+        },
+        {
+          "nome": "Cícero - EcoShowroom",
+          "telefone": "19 97415-5050",
+          "email": "cicero@ecoshowroom.com.br"
+        },
+        {
+          "nome": "Alex - EcoShowroom",
+          "telefone": "19 98133-8961",
+          "email": ""
+        }
+      ],
+      "Campinas": [
+        {
+          "nome": "Arthur Barracuda",
+          "telefone": "19 99258-8152",
+          "email": "suportebarracuda@gmail.com"
+        },
+        {
+          "nome": "Silvio Barracuda",
+          "telefone": "19 99125-8776",
+          "email": "silviobarracuda@gmail.com"
+        }
+      ],
+      "Ribeirão Preto": [
+        {
+          "nome": "Ludmila",
+          "telefone": "16 9213-0011",
+          "email": "ludmila.escritorio@gmail.com"
+        }
+      ],
+      "Franca": [
+        {
+          "nome": "Ludmila",
+          "telefone": "16 9213-0011",
+          "email": "ludmila.escritorio@gmail.com"
+        }
+      ],
+      "Batatais": [
+        {
+          "nome": "Ludmila",
+          "telefone": "16 9213-0011",
+          "email": "ludmila.escritorio@gmail.com"
+        }
+      ],
+      "São Paulo Capital": [
+        {
+          "nome": "Julio Sunto - TLK Soluções",
+          "telefone": "11 97970-0151",
+          "email": "julio@tlksolucoes.com.br"
+        },
+        {
+          "nome": "Gisele - TLK Soluções",
+          "telefone": "11 75455-7415",
+          "email": ""
+        }
+      ]
+    },
+    "MG": {
+      "Governador Valadares": [
+        {
+          "nome": "Cezar Benetti - Benetti Representações",
+          "telefone": "33 9989-5777",
+          "email": "cezar@benettirep.com.br"
+        }
+      ],
+      "Belo Horizonte": [
+        {
+          "nome": "Eduardo Crespo",
+          "telefone": "31 9305-0445",
+          "email": "eduardorpcsolucoes@gmail.com"
+        },
+        {
+          "nome": "Ricardo Bahia",
+          "telefone": "31 8291-1098",
+          "email": "rbahianegocios@gmail.com"
+        }
+      ]
+    },
+    "RJ": {
+      "Rio de Janeiro": [
+        {
+          "nome": "Fabio Braga",
+          "telefone": "22 97401-7835",
+          "email": "fabio.braga10@hotmail.com.br"
+        },
+        {
+          "nome": "Miguel Roldão",
+          "telefone": "21 9862-5242",
+          "email": "msaraiva7@hotmail.com"
+        }
+      ],
+      "Petrópolis": [
+        {
+          "nome": "Miguel Roldão",
+          "telefone": "21 9862-5242",
+          "email": "msaraiva7@hotmail.com"
+        }
+      ]
+    },
+    "ES": {
+      "Vitória": [
+        {
+          "nome": "Gabriel Gabeira",
+          "telefone": "27 9989-9192",
+          "email": "diretoria@ggportapronta.com.br"
+        }
+      ]
+    }
+  },
+  "Sul": {
+    "PR": {
+      "Londrina": [
+        {
+          "nome": "Claudio Adilson Rossi",
+          "telefone": "44 9972-6769",
+          "email": "claudioadilsonrossi@gmail.com.br"
+        }
+      ],
+      "Maringá": [
+        {
+          "nome": "Claudio Adilson Rossi",
+          "telefone": "44 9972-6769",
+          "email": "claudioadilsonrossi@gmail.com.br"
+        }
+      ],
+      "Ponta Grossa": [
+        {
+          "nome": "Eduardo Blanc - Blac Representações",
+          "telefone": "42 91079-9393",
+          "email": "eduardo@blanc.rep.br"
+        },
+        {
+          "nome": "Waldemar",
+          "telefone": "41 9982-7463",
+          "email": "waldemar-mara@hotmail.com"
+        },
+        {
+          "nome": "Mara",
+          "telefone": "41 9601-2503",
+          "email": "waldemar-mara@hotmail.com"
+        }
+      ],
+      "Curitiba": [
+        {
+          "nome": "Mauro Ludvig",
+          "telefone": "41 9683-0851",
+          "email": "mauro@sawig.com.br"
+        },
+        {
+          "nome": "Waldemar",
+          "telefone": "41 9982-7463",
+          "email": "waldemar-mara@hotmail.com"
+        },
+        {
+          "nome": "Mara",
+          "telefone": "41 9601-2503",
+          "email": "waldemar-mara@hotmail.com"
+        }
+      ]
+    },
+    "SC": {
+      "Joinville": [
+        {
+          "nome": "Maurício Francisco",
+          "telefone": "47 9179-0079",
+          "email": "mauffrancisco@hotmail.com"
+        }
+      ],
+      "Florianópolis": [
+        {
+          "nome": "José Rodrigues",
+          "telefone": "48 9837-4458",
+          "email": "joserodrigues.souza77@gmail.com"
+        }
+      ],
+      "Blumenau": [
+        {
+          "nome": "Ricardo Boing",
+          "telefone": "47 9967-2703",
+          "email": "bebrepres@gmail.com"
+        },
+        {
+          "nome": "Armelindo Souza",
+          "telefone": "47 9106-0809",
+          "email": "souza.naj@hotmail.com"
+        }
+      ]
+    },
+    "RS": {
+      "Porto Alegre": [
+        {
+          "nome": "Daniel Crosa - Altex Representações",
+          "telefone": "54 9975-7033",
+          "email": "daniel@altexrepresentacoes.com.br"
+        },
+        {
+          "nome": "Mateus Crosa - Altex Representações",
+          "telefone": "54 99957-2301",
+          "email": "matheus@altexrepresentacoes.com.br"
+        }
+      ],
+      "Caxias do Sul": [
+        {
+          "nome": "Daniel Crosa - Altex Representações",
+          "telefone": "54 9975-7033",
+          "email": "daniel@altexrepresentacoes.com.br"
+        },
+        {
+          "nome": "Mateus Crosa - Altex Representações",
+          "telefone": "54 99957-2301",
+          "email": "matheus@altexrepresentacoes.com.br"
+        }
+      ],
+      "Bento Gonçalves": [
+        {
+          "nome": "Daniel Crosa - Altex Representações",
+          "telefone": "54 9975-7033",
+          "email": "daniel@altexrepresentacoes.com.br"
+        },
+        {
+          "nome": "Mateus Crosa - Altex Representações",
+          "telefone": "54 99957-2301",
+          "email": "matheus@altexrepresentacoes.com.br"
+        }
+      ]
+    }
+  },
+  "Nordeste": {
+    "PE": {
+      "Recife": [
+        {
+          "nome": "Alexandre Carvalho - Bigga Representações",
+          "telefone": "81 9971-7052",
+          "email": "alexandre@bigarepresentacao.com.br"
+        }
+      ]
+    },
+    "BA": {
+      "Salvador": [
+        {
+          "nome": "Carlos Alberto",
+          "telefone": "71 9911-2233",
+          "email": "carlos@representacoesba.com.br"
+        }
+      ]
+    },
+    "CE": {
+      "Fortaleza": [
+        {
+          "nome": "João Lima",
+          "telefone": "85 9988-7766",
+          "email": "joao.lima@ceararep.com.br"
+        }
+      ]
+    },
+    "PB": {
+      "João Pessoa": [
+        {
+          "nome": "Marcos Silva",
+          "telefone": "83 9876-5432",
+          "email": "marcos@pbrepresentacoes.com.br"
+        }
+      ]
+    },
+    "AL": {
+      "Maceió": [
+        {
+          "nome": "Fernanda Costa",
+          "telefone": "82 9966-1122",
+          "email": "fernanda@alrep.com.br"
+        }
+      ]
+    },
+    "SE": {
+      "Aracaju": [
+        {
+          "nome": "Roberto Andrade",
+          "telefone": "79 9912-3344",
+          "email": "roberto@sergiperep.com.br"
+        }
+      ]
+    },
+    "PI": {
+      "Teresina": [
+        {
+          "nome": "Luciana Mendes",
+          "telefone": "86 9944-5566",
+          "email": "luciana@pirep.com.br"
+        }
+      ]
+    },
+    "RN": {
+      "Natal": [
+        {
+          "nome": "Eduardo Freitas",
+          "telefone": "84 9987-6655",
+          "email": "eduardo@natalrep.com.br"
+        }
+      ]
+    },
+    "MA": {
+      "São Luís": [
+        {
+          "nome": "Camila Rocha",
+          "telefone": "98 9911-7788",
+          "email": "camila@marep.com.br"
+        }
+      ]
+    }
+  },
+
+  "Centro-Oeste": {
+    "GO": {
+      "Goiânia": [
+        {
+          "nome": "Gedyr Vieira",
+          "telefone": "62 98407-7019",
+          "email": "contato@gvs.arq.br"
+        },
+        {
+          "nome": "Samuel",
+          "telefone": "62 9684-5525",
+          "email": ""
+        }
+      ],
+      "Anápolis": [
+        {
+          "nome": "Gedyr Vieira",
+          "telefone": "62 98407-7019",
+          "email": "contato@gvs.arq.br"
+        }
+      ]
+    },
+    "DF": {
+      "Brasília": [
+        {
+          "nome": "Gedyr Vieira",
+          "telefone": "62 98407-7019",
+          "email": "contato@gvs.arq.br"
+        }
+      ]
+    },
+    "MT": {
+      "Cuiabá": [
+        {
+          "nome": "Carlos Eduardo",
+          "telefone": "65 9922-3344",
+          "email": "carlos@mtrepresentacoes.com.br"
+        }
+      ]
+    },
+    "MS": {
+      "Campo Grande": [
+        {
+          "nome": "Fernanda Ribeiro",
+          "telefone": "67 9988-7766",
+          "email": "fernanda@msrep.com.br"
+        }
+      ]
+    }
+  }
+}
