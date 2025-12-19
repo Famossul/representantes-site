@@ -39,9 +39,10 @@
 
     .container {
       width: 100%;
-      max-width: 100%;
+      max-width: 500px;
       margin: 1rem auto;
-      padding: 1.2rem;
+      padding: 1rem;
+      box-sizing: border-box; /* garante que padding não estoure largura */
       background-color: var(--cor-caixa);
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -64,8 +65,8 @@
 
     select {
       width: 100%;
-      padding: 1rem;
-      font-size: 1.1rem;
+      padding: 0.8rem; /* reduzir padding */
+      font-size: 1rem;
       margin-top: 0.5rem;
       border: 1px solid var(--cor-borda);
       border-radius: 10px;
@@ -90,8 +91,8 @@
     }
 
     .representante {
-      padding: 1rem;
-      margin-bottom: 1rem;
+      padding: 0.8rem;
+      margin-bottom: 0.8rem;
       background-color: #f9fbfd;
       border-radius: 12px;
       border: 1px solid var(--cor-borda);
@@ -123,14 +124,19 @@
     }
 
     /* Ajustes para telas maiores */
-    @media (min-width: 600px) {
-      .container {
-        max-width: 500px;
-      }
-      h1 {
-        font-size: 1.8rem;
-      }
-    }
+    @media (max-width: 480px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+  label {
+    font-size: 0.9rem;
+  }
+  select {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -243,4 +249,5 @@
 </body>
 
 </html>
+
 
