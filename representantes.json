@@ -1,391 +1,1383 @@
 {
   "Sudeste": {
     "SP": {
-  "São Jose dos Campos": [
-    { "nome": "Iza - ZKS Representações", "telefone": "12 99735-0400", "email": "" },
-    { "nome": "Ana Carolina - ZKS Representações", "telefone": "12 99671-7480", "email": "comercial@zksfechaduras.com.br" },
-    { "nome": "Tel.Fixo", "telefone": "12 3917-1069", "email": "" }
-  ],
-  "Americana": [
-    { "nome": "André - EcoShowroom Representações", "telefone": "19 98104-2804", "email": "andre@ecoshowroom.com.br" },
-    { "nome": "Cícero - EcoShowroom Representações", "telefone": "19 97415-5050", "email": "cicero@ecoshowroom.com.br" },
-    { "nome": "Alex - EcoShowroom Representações", "telefone": "19 98133-8961", "email": "" }
-  ],
-  "Campinas": [
-    { "nome": "André - EcoShowroom Representações", "telefone": "19 98104-2804", "email": "andre@ecoshowroom.com.br" },
-    { "nome": "Cícero - EcoShowroom Representações", "telefone": "19 97415-5050", "email": "cicero@ecoshowroom.com.br" },
-    { "nome": "Alex - EcoShowroom Representações", "telefone": "19 98133-8961", "email": "" },
-    { "nome": "Arthur Barracuda", "telefone": "19 99258-8152", "email": "suportebarracuda@gmail.com" },
-    { "nome": "Silvio Barracuda", "telefone": "19 99125-8776", "email": "silviobarracuda@gmail.com" }
-  ],
-  "Limeira": [
-    { "nome": "André - EcoShowroom Representações", "telefone": "19 98104-2804", "email": "andre@ecoshowroom.com.br" },
-    { "nome": "Cícero - EcoShowroom Representações", "telefone": "19 97415-5050", "email": "cicero@ecoshowroom.com.br" },
-    { "nome": "Alex - EcoShowroom Representações", "telefone": "19 98133-8961", "email": "" }
-  ],
-  "Piracicaba": [
-    { "nome": "André - EcoShowroom Representações", "telefone": "19 98104-2804", "email": "andre@ecoshowroom.com.br" },
-    { "nome": "Cícero - EcoShowroom Representações", "telefone": "19 97415-5050", "email": "cicero@ecoshowroom.com.br" },
-    { "nome": "Alex - EcoShowroom Representações", "telefone": "19 98133-8961", "email": "" }
-  ],
-  "Salto": [
-    { "nome": "André - EcoShowroom Representações", "telefone": "19 98104-2804", "email": "andre@ecoshowroom.com.br" },
-    { "nome": "Cícero - EcoShowroom Representações", "telefone": "19 97415-5050", "email": "cicero@ecoshowroom.com.br" },
-    { "nome": "Alex - EcoShowroom Representações", "telefone": "19 98133-8961", "email": "" }
-  ],
-  "Sorocaba": [
-    { "nome": "André - EcoShowroom Representações", "telefone": "19 98104-2804", "email": "andre@ecoshowroom.com.br" },
-    { "nome": "Cícero - EcoShowroom Representações", "telefone": "19 97415-5050", "email": "cicero@ecoshowroom.com.br" },
-    { "nome": "Alex - EcoShowroom Representações", "telefone": "19 98133-8961", "email": "" }
-  ],
-  "Sumaré": [
-    { "nome": "André - EcoShowroom Representações", "telefone": "19 98104-2804", "email": "andre@ecoshowroom.com.br" },
-    { "nome": "Cícero - EcoShowroom Representações", "telefone": "19 97415-5050", "email": "cicero@ecoshowroom.com.br" },
-    { "nome": "Alex - EcoShowroom Representações", "telefone": "19 98133-8961", "email": "" }
-  ],
-  "Tietê": [
-    { "nome": "André - EcoShowroom Representações", "telefone": "19 98104-2804", "email": "andre@ecoshowroom.com.br" },
-    { "nome": "Cícero - EcoShowroom Representações", "telefone": "19 97415-5050", "email": "cicero@ecoshowroom.com.br" },
-    { "nome": "Alex - EcoShowroom Representações", "telefone": "19 98133-8961", "email": "" }
-  ],
-  "Hortolândia": [
-    { "nome": "André - EcoShowroom Representações", "telefone": "19 98104-2804", "email": "andre@ecoshowroom.com.br" },
-    { "nome": "Cícero - EcoShowroom Representações", "telefone": "19 97415-5050", "email": "cicero@ecoshowroom.com.br" },
-    { "nome": "Alex - EcoShowroom Representações", "telefone": "19 98133-8961", "email": "" }
-  ],
-  "Rio Claro": [
-    { "nome": "André - EcoShowroom Representações", "telefone": "19 98104-2804", "email": "andre@ecoshowroom.com.br" },
-    { "nome": "Cícero - EcoShowroom Representações", "telefone": "19 97415-5050", "email": "cicero@ecoshowroom.com.br" },
-    { "nome": "Alex - EcoShowroom Representações", "telefone": "19 98133-8961", "email": "" }
-  ],
+      "São Jose dos Campos": [
+        { "nome": "Iza - ZKS Representações", "telefone": "12 99735-0400", "email": "" },
+        { "nome": "Ana Carolina - ZKS Representações", "telefone": "12 99671-7480", "email": "comercial@zksfechaduras.com.br" },
+        { "nome": "Tel.Fixo", "telefone": "12 3917-1069", "email": "" }
+      ],
+      "Americana": [
+        { "nome": "André - EcoShowroom Representações", "telefone": "19 98104-2804", "email": "andre@ecoshowroom.com.br" },
+        { "nome": "Cícero - EcoShowroom Representações", "telefone": "19 97415-5050", "email": "cicero@ecoshowroom.com.br" },
+        { "nome": "Alex - EcoShowroom Representações", "telefone": "19 98133-8961", "email": "" }
+      ],
+      "Campinas": [
+        { "nome": "André - EcoShowroom Representações", "telefone": "19 98104-2804", "email": "andre@ecoshowroom.com.br" },
+        { "nome": "Cícero - EcoShowroom Representações", "telefone": "19 97415-5050", "email": "cicero@ecoshowroom.com.br" },
+        { "nome": "Alex - EcoShowroom Representações", "telefone": "19 98133-8961", "email": "" },
+        { "nome": "Arthur Barracuda", "telefone": "19 99258-8152", "email": "suportebarracuda@gmail.com" },
+        { "nome": "Silvio Barracuda", "telefone": "19 99125-8776", "email": "silviobarracuda@gmail.com" }
+      ],
+      "Limeira": [
+        { "nome": "André - EcoShowroom Representações", "telefone": "19 98104-2804", "email": "andre@ecoshowroom.com.br" },
+        { "nome": "Cícero - EcoShowroom Representações", "telefone": "19 97415-5050", "email": "cicero@ecoshowroom.com.br" },
+        { "nome": "Alex - EcoShowroom Representações", "telefone": "19 98133-8961", "email": "" }
+      ],
+      "Piracicaba": [
+        { "nome": "André - EcoShowroom Representações", "telefone": "19 98104-2804", "email": "andre@ecoshowroom.com.br" },
+        { "nome": "Cícero - EcoShowroom Representações", "telefone": "19 97415-5050", "email": "cicero@ecoshowroom.com.br" },
+        { "nome": "Alex - EcoShowroom Representações", "telefone": "19 98133-8961", "email": "" }
+      ],
+      "Salto": [
+        { "nome": "André - EcoShowroom Representações", "telefone": "19 98104-2804", "email": "andre@ecoshowroom.com.br" },
+        { "nome": "Cícero - EcoShowroom Representações", "telefone": "19 97415-5050", "email": "cicero@ecoshowroom.com.br" },
+        { "nome": "Alex - EcoShowroom Representações", "telefone": "19 98133-8961", "email": "" }
+      ],
+      "Sorocaba": [
+        { "nome": "André - EcoShowroom Representações", "telefone": "19 98104-2804", "email": "andre@ecoshowroom.com.br" },
+        { "nome": "Cícero - EcoShowroom Representações", "telefone": "19 97415-5050", "email": "cicero@ecoshowroom.com.br" },
+        { "nome": "Alex - EcoShowroom Representações", "telefone": "19 98133-8961", "email": "" }
+      ],
+      "Sumaré": [
+        { "nome": "André - EcoShowroom Representações", "telefone": "19 98104-2804", "email": "andre@ecoshowroom.com.br" },
+        { "nome": "Cícero - EcoShowroom Representações", "telefone": "19 97415-5050", "email": "cicero@ecoshowroom.com.br" },
+        { "nome": "Alex - EcoShowroom Representações", "telefone": "19 98133-8961", "email": "" }
+      ],
+      "Tietê": [
+        { "nome": "André - EcoShowroom Representações", "telefone": "19 98104-2804", "email": "andre@ecoshowroom.com.br" },
+        { "nome": "Cícero - EcoShowroom Representações", "telefone": "19 97415-5050", "email": "cicero@ecoshowroom.com.br" },
+        { "nome": "Alex - EcoShowroom Representações", "telefone": "19 98133-8961", "email": "" }
+      ],
+      "Hortolândia": [
+        { "nome": "André - EcoShowroom Representações", "telefone": "19 98104-2804", "email": "andre@ecoshowroom.com.br" },
+        { "nome": "Cícero - EcoShowroom Representações", "telefone": "19 97415-5050", "email": "cicero@ecoshowroom.com.br" },
+        { "nome": "Alex - EcoShowroom Representações", "telefone": "19 98133-8961", "email": "" }
+      ],
+      "Rio Claro": [
+        { "nome": "André - EcoShowroom Representações", "telefone": "19 98104-2804", "email": "andre@ecoshowroom.com.br" },
+        { "nome": "Cícero - EcoShowroom Representações", "telefone": "19 97415-5050", "email": "cicero@ecoshowroom.com.br" },
+        { "nome": "Alex - EcoShowroom Representações", "telefone": "19 98133-8961", "email": "" }
+      ],
+      "Valinhos": [
+        { "nome": "Arthur Barracuda", "telefone": "19 99258-8152", "email": "suportebarracuda@gmail.com" },
+        { "nome": "Silvio Barracuda", "telefone": "19 99125-8776", "email": "silviobarracuda@gmail.com" }
+      ],
+      "Indaiatuba": [
+        { "nome": "Arthur Barracuda", "telefone": "19 99258-8152", "email": "suportebarracuda@gmail.com" },
+        { "nome": "Silvio Barracuda", "telefone": "19 99125-8776", "email": "silviobarracuda@gmail.com" }
+      ],
+      "Itapeva": [
+        { "nome": "Eduardo Blanc - Blac Representações", "telefone": "42 91079-9393", "email": "eduardo@blanc.rep.br" }
+      ],
+      "Itararé": [
+        { "nome": "Eduardo Blanc - Blac Representações", "telefone": "42 91079-9393", "email": "eduardo@blanc.rep.br" }
+      ],
+      "São José do Rio Preto": [
+        { "nome": "Hipólito", "telefone": "17 99145-2772", "email": "hipolito.repre@gmail.com.br" },
+        { "nome": "Lucas", "telefone": "17 99145-2778", "email": "luca.repre@gmail.com.br" }
+      ],
+      "São Paulo Capital": [
+        { "nome": "Julio Sunto - TLK Soluções", "telefone": "11 97970-0151", "email": "julio@tlksolucoes.com.br" },
+        { "nome": "Gisele - TLK Soluções", "telefone": "11 975455-7415", "email": "" }
+      ],
+      "Ribeirão Preto": [
+        { "nome": "Ludmila", "telefone": "16 9213-0011", "email": "ludmila.escritorio@gmail.com" }
+      ],
+      "Batatais": [
+        { "nome": "Ludmila", "telefone": "16 9213-0011", "email": "ludmila.escritorio@gmail.com" }
+      ],
+      "Franca": [
+        { "nome": "Ludmila", "telefone": "16 9213-0011", "email": "ludmila.escritorio@gmail.com" }
+      ],
+      "Jundiaí": [
+        { "nome": "Percival Cardoso", "telefone": "11 98654-3130", "email": "pcardoso@cardex.com.br" },
+        { "nome": "Percival Cardoso", "telefone": "11 98654-3130", "email": "percival8@icloud.com" }
+      ],
+      "Cataguá": [
+        { "nome": "Percival Cardoso", "telefone": "11 98654-3130", "email": "pcardoso@cardex.com.br" },
+        { "nome": "Percival Cardoso", "telefone": "11 98654-3130", "email": "percival8@icloud.com" }
+      ],
+      "Baixada Santista": [
+        { "nome": "Tania Teixeira", "telefone": "13 99613-9415", "email": "taniamanfreteixeira@yahoo.com.br" }
+      ],
+      "Peruíbe": [
+        { "nome": "Tania Teixeira", "telefone": "13 99613-9415", "email": "taniamanfreteixeira@yahoo.com.br" }
+      ],
+      "Itanhaém": [
+        { "nome": "Tania Teixeira", "telefone": "13 99613-9415", "email": "taniamanfreteixeira@yahoo.com.br" }
+      ],
+      "Mongaguá": [
+        { "nome": "Tania Teixeira", "telefone": "13 99613-9415", "email": "taniamanfreteixeira@yahoo.com.br" }
+      ],
+      "Praia Grande": [
+        { "nome": "Tania Teixeira", "telefone": "13 99613-9415", "email": "taniamanfreteixeira@yahoo.com.br" }
+      ],
+      "Santos": [
+        { "nome": "Tania Teixeira", "telefone": "13 99613-9415", "email": "taniamanfreteixeira@yahoo.com.br" }
+      ],
+      "Cubatão": [
+        { "nome": "Tania Teixeira", "telefone": "13 99613-9415", "email": "taniamanfreteixeira@yahoo.com.br" }
+      ],
+      "Guarujá": [
+        { "nome": "Tania Teixeira", "telefone": "13 99613-9415", "email": "taniamanfreteixeira@yahoo.com.br" }
+      ],
+      "Bertioga": [
+        { "nome": "Tania Teixeira", "telefone": "13 99613-9415", "email": "taniamanfreteixeira@yahoo.com.br" }
+      ]
+    },
 
-  "Valinhos": [
-    { "nome": "Arthur Barracuda", "telefone": "19 99258-8152", "email": "suportebarracuda@gmail.com" },
-    { "nome": "Silvio Barracuda", "telefone": "19 99125-8776", "email": "silviobarracuda@gmail.com" }
+    "MG": {
+  "Governador Valadares": [
+    { "nome": "Cezar Benetti - Benetti Representações", "telefone": "33 99989-5777", "email": "cezar@benettirep.com.br" },
+    { "nome": "Tel.Fixo", "telefone": "33 3021-4343", "email": "" }
   ],
-  "Indaiatuba": [
-    { "nome": "Arthur Barracuda", "telefone": "19 99258-8152", "email": "suportebarracuda@gmail.com" },
-    { "nome": "Silvio Barracuda", "telefone": "19 99125-8776", "email": "silviobarracuda@gmail.com" }
+  "Aimorés": [ { "nome": "Cezar Benetti - Benetti Representações", "telefone": "33 99989-5777", "email": "cezar@benettirep.com.br" }, { "nome": "Tel.Fixo", "telefone": "33 3021-4343", "email": "" } ],
+  "Caratinga": [ { "nome": "Cezar Benetti - Benetti Representações", "telefone": "33 99989-5777", "email": "cezar@benettirep.com.br" }, { "nome": "Tel.Fixo", "telefone": "33 3021-4343", "email": "" } ],
+  "Guanhães": [ { "nome": "Cezar Benetti - Benetti Representações", "telefone": "33 99989-5777", "email": "cezar@benettirep.com.br" }, { "nome": "Tel.Fixo", "telefone": "33 3021-4343", "email": "" } ],
+  "Ipatinga": [ { "nome": "Cezar Benetti - Benetti Representações", "telefone": "33 99989-5777", "email": "cezar@benettirep.com.br" }, { "nome": "Tel.Fixo", "telefone": "33 3021-4343", "email": "" } ],
+  "Mantena": [ { "nome": "Cezar Benetti - Benetti Representações", "telefone": "33 99989-5777", "email": "cezar@benettirep.com.br" }, { "nome": "Tel.Fixo", "telefone": "33 3021-4343", "email": "" } ],
+  "Peçanha": [ { "nome": "Cezar Benetti - Benetti Representações", "telefone": "33 99989-5777", "email": "cezar@benettirep.com.br" }, { "nome": "Tel.Fixo", "telefone": "33 3021-4343", "email": "" } ],
+  "Coronel Fabriciano": [ { "nome": "Cezar Benetti - Benetti Representações", "telefone": "33 99989-5777", "email": "cezar@benettirep.com.br" }, { "nome": "Tel.Fixo", "telefone": "33 3021-4343", "email": "" } ],
+  "Manhuaçu": [ { "nome": "Cezar Benetti - Benetti Representações", "telefone": "33 99989-5777", "email": "cezar@benettirep.com.br" }, { "nome": "Tel.Fixo", "telefone": "33 3021-4343", "email": "" } ],
+  "Timóteo": [ { "nome": "Cezar Benetti - Benetti Representações", "telefone": "33 99989-5777", "email": "cezar@benettirep.com.br" }, { "nome": "Tel.Fixo", "telefone": "33 3021-4343", "email": "" } ],
+
+  "Belo Horizonte": [
+    { "nome": "Eduardo Crespo", "telefone": "31 99305-0445", "email": "eduardorpcsolucoes@gmail.com" },
+    { "nome": "Ricardo Bahia", "telefone": "31 98291-1098", "email": "rbahianegocios@gmail.com" }
   ],
-  "Itapeva": [
-    { "nome": "Eduardo Blanc - Blac representações", "telefone": "42 91079-9393", "email": "eduardo@blanc.rep.br" }
+  "Divinópolis": [ { "nome": "Ricardo Bahia", "telefone": "31 98291-1098", "email": "rbahianegocios@gmail.com" } ],
+  "João Monlevade": [ { "nome": "Ricardo Bahia", "telefone": "31 98291-1098", "email": "rbahianegocios@gmail.com" } ],
+  "Oliveira": [ { "nome": "Ricardo Bahia", "telefone": "31 98291-1098", "email": "rbahianegocios@gmail.com" } ],
+  "Ouro Preto": [ { "nome": "Ricardo Bahia", "telefone": "31 98291-1098", "email": "rbahianegocios@gmail.com" } ],
+  "Pará de Minas": [ { "nome": "Ricardo Bahia", "telefone": "31 98291-1098", "email": "rbahianegocios@gmail.com" } ],
+  "Sete Lagoas": [ { "nome": "Ricardo Bahia", "telefone": "31 98291-1098", "email": "rbahianegocios@gmail.com" } ],
+  "Santa Bárbara": [ { "nome": "Ricardo Bahia", "telefone": "31 98291-1098", "email": "rbahianegocios@gmail.com" } ],
+  "Conselheiro Lafaiete": [ { "nome": "Ricardo Bahia", "telefone": "31 98291-1098", "email": "rbahianegocios@gmail.com" } ],
+  "Belo Vale": [ { "nome": "Ricardo Bahia", "telefone": "31 98291-1098", "email": "rbahianegocios@gmail.com" } ],
+  "Congonhas": [ { "nome": "Ricardo Bahia", "telefone": "31 98291-1098", "email": "rbahianegocios@gmail.com" } ],
+  "Ouro Branco": [ { "nome": "Ricardo Bahia", "telefone": "31 98291-1098", "email": "rbahianegocios@gmail.com" } ],
+
+  "Barbacena": [
+    { "nome": "Salvador Thomas", "telefone": "32 98833-5499", "email": "salvadorthomaz@hotmail.com" },
+    { "nome": "Juliana", "telefone": "32 98874-1509", "email": "salvadorthomaz@hotmail.com" }
   ],
-  "Itararé": [
-    { "nome": "Eduardo Blanc - Blac representações", "telefone": "42 91079-9393", "email": "eduardo@blanc.rep.br" }
+  "Barroso": [ { "nome": "Salvador Thomas", "telefone": "32 98833-5499", "email": "salvadorthomaz@hotmail.com" }, { "nome": "Juliana", "telefone": "32 98874-1509", "email": "salvadorthomaz@hotmail.com" } ],
+  "Carandaí": [ { "nome": "Salvador Thomas", "telefone": "32 98833-5499", "email": "salvadorthomaz@hotmail.com" }, { "nome": "Juliana", "telefone": "32 98874-1509", "email": "salvadorthomaz@hotmail.com" } ],
+  "Cristiano Otoni": [ { "nome": "Salvador Thomas", "telefone": "32 98833-5499", "email": "salvadorthomaz@hotmail.com" }, { "nome": "Juliana", "telefone": "32 98874-1509", "email": "salvadorthomaz@hotmail.com" } ],
+  "São João Del-Rei": [ { "nome": "Salvador Thomas", "telefone": "32 98833-5499", "email": "salvadorthomaz@hotmail.com" }, { "nome": "Juliana", "telefone": "32 98874-1509", "email": "salvadorthomaz@hotmail.com" } ],
+  "Tiradentes": [ { "nome": "Salvador Thomas", "telefone": "32 98833-5499", "email": "salvadorthomaz@hotmail.com" }, { "nome": "Juliana", "telefone": "32 98874-1509", "email": "salvadorthomaz@hotmail.com" } ],
+  "Juiz de Fora": [ { "nome": "Salvador Thomas", "telefone": "32 98833-5499", "email": "salvadorthomaz@hotmail.com" }, { "nome": "Juliana", "telefone": "32 98874-1509", "email": "salvadorthomaz@hotmail.com" } ],
+  "Lavras": [ { "nome": "Salvador Thomas", "telefone": "32 98833-5499", "email": "salvadorthomaz@hotmail.com" }, { "nome": "Juliana", "telefone": "32 98874-1509", "email": "salvadorthomaz@hotmail.com" } ],
+
+  "Lima Duarte": [
+    { "nome": "Salvador Thomas", "telefone": "32 98833-5499", "email": "salvadorthomaz@hotmail.com" },
+    { "nome": "Juliana", "telefone": "32 98874-1509", "email": "salvadorthomaz@hotmail.com" }
   ],
-  "São José do Rio Preto": [
-    { "nome": "Hipólito", "telefone": "17 99145-2772", "email": "hipolito.repre@gmail.com.br" },
-    { "nome": "Lucas", "telefone": "17 99145-2778", "email": "luca.repre@gmail.com.br" }
+  "Poços de Caldas": [
+    { "nome": "Salvador Thomas", "telefone": "32 98833-5499", "email": "salvadorthomaz@hotmail.com" },
+    { "nome": "Juliana", "telefone": "32 98874-1509", "email": "salvadorthomaz@hotmail.com" }
   ],
-  "São Paulo Capital": [
-    { "nome": "Julio Sunto - TLK Soluções", "telefone": "11 97970-0151", "email": "julio@tlksolucoes.com.br" },
-    { "nome": "Gisele - TLK Soluções", "telefone": "11 975455-7415", "email": "" }
+  "Pouso Alegre": [
+    { "nome": "Salvador Thomas", "telefone": "32 98833-5499", "email": "salvadorthomaz@hotmail.com" },
+    { "nome": "Juliana", "telefone": "32 98874-1509", "email": "salvadorthomaz@hotmail.com" }
   ],
-  "Ribeirão Preto": [
-    { "nome": "Ludmila", "telefone": "16 9213-0011", "email": "ludmila.escritorio@gmail.com" }
+  "Rio Pomba": [
+    { "nome": "Salvador Thomas", "telefone": "32 98833-5499", "email": "salvadorthomaz@hotmail.com" },
+    { "nome": "Juliana", "telefone": "32 98874-1509", "email": "salvadorthomaz@hotmail.com" }
   ],
-  "Batatais": [
-    { "nome": "Ludmila", "telefone": "16 9213-0011", "email": "ludmila.escritorio@gmail.com" }
+  "Santos Dumont": [
+    { "nome": "Salvador Thomas", "telefone": "32 98833-5499", "email": "salvadorthomaz@hotmail.com" },
+    { "nome": "Juliana", "telefone": "32 98874-1509", "email": "salvadorthomaz@hotmail.com" }
   ],
-  "Franca": [
-    { "nome": "Ludmila", "telefone": "16 9213-0011", "email": "ludmila.escritorio@gmail.com" }
+  "Três Corações": [
+    { "nome": "Salvador Thomas", "telefone": "32 98833-5499", "email": "salvadorthomaz@hotmail.com" },
+    { "nome": "Juliana", "telefone": "32 98874-1509", "email": "salvadorthomaz@hotmail.com" }
   ],
-  "Jundiaí": [
-    { "nome": "Percival Cardoso", "telefone": "11 98654-3130", "email": "pcardoso@cardex.com.br" },
-    { "nome": "Percival Cardoso", "telefone": "11 98654-3130", "email": "percival8@icloud.com" }
+  "Varginha": [
+    { "nome": "Salvador Thomas", "telefone": "32 98833-5499", "email": "salvadorthomaz@hotmail.com" },
+    { "nome": "Juliana", "telefone": "32 98874-1509", "email": "salvadorthomaz@hotmail.com" }
   ],
-  "Cataguá": [
-    { "nome": "Percival Cardoso", "telefone": "11 98654-3130", "email": "pcardoso@cardex.com.br" },
-    { "nome": "Percival Cardoso", "telefone": "11 98654-3130", "email": "percival8@icloud.com" }
+  "Alfenas": [
+    { "nome": "Salvador Thomas", "telefone": "32 98833-5499", "email": "salvadorthomaz@hotmail.com" },
+    { "nome": "Juliana", "telefone": "32 98874-1509", "email": "salvadorthomaz@hotmail.com" }
   ],
-  "Baixada Santista": [
-    { "nome": "Tania Teixeira", "telefone": "13 99613-9415", "email": "taniamanfreteixeira@yahoo.com.br" }
+  "Campos Gerais": [
+    { "nome": "Salvador Thomas", "telefone": "32 98833-5499", "email": "salvadorthomaz@hotmail.com" },
+    { "nome": "Juliana", "telefone": "32 98874-1509", "email": "salvadorthomaz@hotmail.com" }
   ],
-  "Peruíbe": [
-  { "nome": "Tania Teixeira", "telefone": "13 99613-9415", "email": "taniamanfreteixeira@yahoo.com.br" }
-],
-"Itanhaém": [
-  { "nome": "Tania Teixeira", "telefone": "13 99613-9415", "email": "taniamanfreteixeira@yahoo.com.br" }
-],
-"Mongaguá": [
-  { "nome": "Tania Teixeira", "telefone": "13 99613-9415", "email": "taniamanfreteixeira@yahoo.com.br" }
-],
-"Praia Grande": [
-  { "nome": "Tania Teixeira", "telefone": "13 99613-9415", "email": "taniamanfreteixeira@yahoo.com.br" }
-],
-"Santos": [
-  { "nome": "Tania Teixeira", "telefone": "13 99613-9415", "email": "taniamanfreteixeira@yahoo.com.br" }
-],
-"Cubatão": [
-  { "nome": "Tania Teixeira", "telefone": "13 99613-9415", "email": "taniamanfreteixeira@yahoo.com.br" }
-],
-"Guarujá": [
-  { "nome": "Tania Teixeira", "telefone": "13 99613-9415", "email": "taniamanfreteixeira@yahoo.com.br" }
-],
-"Bertioga": [
-  { "nome": "Tania Teixeira", "telefone": "13 99613-9415", "email": "taniamanfreteixeira@yahoo.com.br" }
-]
+  "Carvalhópolis": [
+    { "nome": "Salvador Thomas", "telefone": "32 98833-5499", "email": "salvadorthomaz@hotmail.com" },
+    { "nome": "Juliana", "telefone": "32 98874-1509", "email": "salvadorthomaz@hotmail.com" }
+  ],
+  "Fama": [
+    { "nome": "Salvador Thomas", "telefone": "32 98833-5499", "email": "salvadorthomaz@hotmail.com" },
+    { "nome": "Juliana", "telefone": "32 98874-1509", "email": "salvadorthomaz@hotmail.com" }
+  ],
+  "Machado": [
+    { "nome": "Salvador Thomas", "telefone": "32 98833-5499", "email": "salvadorthomaz@hotmail.com" },
+    { "nome": "Juliana", "telefone": "32 98874-1509", "email": "salvadorthomaz@hotmail.com" }
+  ],
+  "Paraguaçu": [
+    { "nome": "Salvador Thomas", "telefone": "32 98833-5499", "email": "salvadorthomaz@hotmail.com" },
+    { "nome": "Juliana", "telefone": "32 98874-1509", "email": "salvadorthomaz@hotmail.com" }
+  ],
+  "Poço Fundo": [
+    { "nome": "Salvador Thomas", "telefone": "32 98833-5499", "email": "salvadorthomaz@hotmail.com" },
+    { "nome": "Juliana", "telefone": "32 98874-1509", "email": "salvadorthomaz@hotmail.com" }
+  ],
+  "Serrania": [
+    { "nome": "Salvador Thomas", "telefone": "32 98833-5499", "email": "salvadorthomaz@hotmail.com" },
+    { "nome": "Juliana", "telefone": "32 98874-1509", "email": "salvadorthomaz@hotmail.com" }
+  ],
+  "Uberaba": [
+    { "nome": "Thyrso", "telefone": "34 99280-0622", "email": "vendas@modernarep.com.br" }
+  ],
+  "Uberlândia": [
+    { "nome": "Thyrso", "telefone": "34 99280-0622", "email": "vendas@modernarep.com.br" }
+  ]
+},
+
+    "RJ": {
+      "Rio de Janeiro": [
+        {
+          "nome": "Fabio Braga",
+          "telefone": "22 9 7401-7835",
+          "email": "fabio.braga10@hotmail.com.br"
+        },
+
+        {
+          "nome": "Miguel Roldão",
+          "telefone": "21 9 9862-5242",
+          "email": "msaraiva7@hotmail.com"
+        }
+      ],
+      "Petrópolis": [
+        {
+          "nome": "Miguel Roldão",
+          "telefone": "21 9 9862-5242",
+          "email": "msaraiva7@hotmail.com"
+        }
+      ]
+
+
     },
     "ES": {
       "Vitória": [
         {
           "nome": "Gabriel Gabeira",
-          "telefone": "27 9989-9192",
+          "telefone": "27 9 9989-9192",
           "email": "diretoria@ggportapronta.com.br"
         }
       ]
     }
   },
+
   "Sul": {
     "PR": {
       "Londrina": [
         {
           "nome": "Claudio Adilson Rossi",
-          "telefone": "44 9972-6769",
+          "telefone": "44 9 9972-6769",
           "email": "claudioadilsonrossi@gmail.com.br"
         }
       ],
-      "Maringá": [
+      "Maringa": [
         {
           "nome": "Claudio Adilson Rossi",
-          "telefone": "44 9972-6769",
+          "telefone": "44 9 9972-6769",
           "email": "claudioadilsonrossi@gmail.com.br"
         }
       ],
-      "Ponta Grossa": [
+      "Castro": [
         {
-          "nome": "Eduardo Blanc - Blac Representações",
-          "telefone": "42 91079-9393",
+          "nome": "Eduardo Blanc - Blac representações",
+          "telefone": "42 9 91079393",
           "email": "eduardo@blanc.rep.br"
-        },
+        }
+      ],
+      "Jaguariaíva": [
         {
-          "nome": "Waldemar",
-          "telefone": "41 9982-7463",
-          "email": "waldemar-mara@hotmail.com"
-        },
+          "nome": "Eduardo Blanc - Blac representações",
+          "telefone": "42 9 91079393",
+          "email": "eduardo@blanc.rep.br"
+        }
+      ],
+      "Sengés": [
         {
-          "nome": "Mara",
-          "telefone": "41 9601-2503",
-          "email": "waldemar-mara@hotmail.com"
+          "nome": "Eduardo Blanc - Blac representações",
+          "telefone": "42 9 91079393",
+          "email": "eduardo@blanc.rep.br"
+        }
+      ],
+      "Arapoti": [
+        {
+          "nome": "Eduardo Blanc - Blac representações",
+          "telefone": "42 9 91079393",
+          "email": "eduardo@blanc.rep.br"
+        }
+      ],
+      "Telêmaco Borba": [
+        {
+          "nome": "Eduardo Blanc - Blac representações",
+          "telefone": "42 9 91079393",
+          "email": "eduardo@blanc.rep.br"
+        }
+      ],
+      "Prudentópolis": [
+        {
+          "nome": "Eduardo Blanc - Blac representações",
+          "telefone": "42 9 91079393",
+          "email": "eduardo@blanc.rep.br"
+        }
+      ],
+      "Imbituva": [
+        {
+          "nome": "Eduardo Blanc - Blac representações",
+          "telefone": "42 9 91079393",
+          "email": "eduardo@blanc.rep.br"
+        }
+      ],
+      "Irati": [
+        {
+          "nome": "Eduardo Blanc - Blac representações",
+          "telefone": "42 9 91079393",
+          "email": "eduardo@blanc.rep.br"
+        }
+      ],
+      "São Mateus do Sul": [
+        {
+          "nome": "Eduardo Blanc - Blac representações",
+          "telefone": "42 9 91079393",
+          "email": "eduardo@blanc.rep.br"
+        }
+      ],
+      "União da Vitória": [
+        {
+          "nome": "Eduardo Blanc - Blac representações",
+          "telefone": "42 9 91079393",
+          "email": "eduardo@blanc.rep.br"
         }
       ],
       "Curitiba": [
         {
           "nome": "Mauro Ludvig",
-          "telefone": "41 9683-0851",
+          "telefone": "41 9 9683-0851",
           "email": "mauro@sawig.com.br"
         },
         {
           "nome": "Waldemar",
-          "telefone": "41 9982-7463",
+          "telefone": "41 9 9982-7463",
           "email": "waldemar-mara@hotmail.com"
         },
         {
           "nome": "Mara",
-          "telefone": "41 9601-2503",
+          "telefone": "41 9 9601-2503",
           "email": "waldemar-mara@hotmail.com"
         }
+      ],
+      "Ponta Grossa": [
+        {
+          "nome": "Waldemar",
+          "telefone": "41 9 9982-7463",
+          "email": "waldemar-mara@hotmail.com"
+        },
+        {
+          "nome": "Mara",
+          "telefone": "41 9 9601-2503",
+          "email": "waldemar-mara@hotmail.com"
+        }
+      ],
+      "Cascavel": [
+        {
+          "nome": "Willian Lazzarin",
+          "telefone": "45 9 9920-4114",
+          "email": "willianlazzarin@hotmail.com"
+        }
+      ],
+      "Foz do Iguaçu": [
+        {
+          "nome": "Willian Lazzarin",
+          "telefone": "45 9 9920-4114",
+          "email": "willianlazzarin@hotmail.com"
+        }
+      ],
+      "Pato Branco": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Francisco Beltrão": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Bom Sucesso": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Eneias Marques": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Itapejara": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Nova Esperança Sudoeste": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "São João": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Santa Izabel D’oeste": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Coronel Vivida": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Ampere": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Chopinzinho": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Realeza": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Sulina": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Planalto": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Saudades do Iguaçú": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Capanema": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Rio Bonito Iguaçu": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Vere": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Laranjeiras do Sul": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Dois Vizinhos": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Porto Barreiro": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "São Jorge D’oeste": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Nova Laranjeiras": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Salto do Lontra": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Virmond": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Nova Prata Canta Galo": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Boa Esperança do Iguaçu": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Honorio Serpa": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Cruzeiro do Iguaçu": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Mangueirinha": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Marmeleiro": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Reserva do Iguaçú": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Renascença": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Foz do Jordão": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Flor da Serra do Sul": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Candói": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Barracão": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Mariopolis": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Clevelândia": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Santo Antonio do Sudoeste": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Palmas": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Bom Jesus do Sul": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Bela Vista da Caroba": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Ouro Verde": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Manfrinopolis": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Salgado Filho": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Ipuaçu": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Pinhal de São Bento": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Perola D’oeste": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "São Lourenço Doeste": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Pranhita": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "São Bernardino": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Campo Ere": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
       ]
+
     },
     "SC": {
-      "Joinville": [
+      "Porto União": [
         {
-          "nome": "Maurício Francisco",
-          "telefone": "47 9179-0079",
-          "email": "mauffrancisco@hotmail.com"
+          "nome": "Eduardo Blanc - Blac Representações",
+          "telefone": "42 9 9107-9393",
+          "email": "eduardo@blanc.rep.br"
+        }
+      ],
+      "Governador Celso Ramos": [
+        {
+          "nome": "José Rodrigues",
+          "telefone": "48 9 9837-4458",
+          "email": "joserodrigues.souza77@gmail.com"
         }
       ],
       "Florianópolis": [
         {
           "nome": "José Rodrigues",
-          "telefone": "48 9837-4458",
+          "telefone": "48 9 9837-4458",
           "email": "joserodrigues.souza77@gmail.com"
+        }
+      ],
+      "Criciúma": [
+        {
+          "nome": "José Rodrigues",
+          "telefone": "48 9 9837-4458",
+          "email": "joserodrigues.souza77@gmail.com"
+        }
+      ],
+      "Joinville": [
+        {
+          "nome": "Maurício Francisco",
+          "telefone": "47 9 9179-0079",
+          "email": "mauffrancisco@hotmail.com"
+        }
+      ],
+      "Apiúna": [
+        {
+          "nome": "Ricardo Boing",
+          "telefone": "47 9 9967-2703",
+          "email": "bebrepres@gmail.com"
+        },
+        {
+          "nome": "Armelindo Souza",
+          "telefone": "47 9 9106-0809",
+          "email": "souza.naj@hotmail.com"
+        }
+      ],
+      "Ascurra": [
+        {
+          "nome": "Ricardo Boing",
+          "telefone": "47 9 9967-2703",
+          "email": "bebrepres@gmail.com"
+        },
+        {
+          "nome": "Armelindo Souza",
+          "telefone": "47 9 9106-0809",
+          "email": "souza.naj@hotmail.com"
+        }
+      ],
+      "Barra Velha": [
+        {
+          "nome": "Ricardo Boing",
+          "telefone": "47 9 9967-2703",
+          "email": "bebrepres@gmail.com"
+        },
+        {
+          "nome": "Armelindo Souza",
+          "telefone": "47 9 9106-0809",
+          "email": "souza.naj@hotmail.com"
         }
       ],
       "Blumenau": [
         {
           "nome": "Ricardo Boing",
-          "telefone": "47 9967-2703",
+          "telefone": "47 9 9967-2703",
           "email": "bebrepres@gmail.com"
         },
         {
           "nome": "Armelindo Souza",
-          "telefone": "47 9106-0809",
+          "telefone": "47 9 9106-0809",
           "email": "souza.naj@hotmail.com"
         }
+      ],
+      "Brusque": [
+        {
+          "nome": "Ricardo Boing",
+          "telefone": "47 9 9967-2703",
+          "email": "bebrepres@gmail.com"
+        },
+        {
+          "nome": "Armelindo Souza",
+          "telefone": "47 9 9106-0809",
+          "email": "souza.naj@hotmail.com"
+        }
+      ],
+      "Itajaí": [
+        {
+          "nome": "Ricardo Boing",
+          "telefone": "47 9 9967-2703",
+          "email": "bebrepres@gmail.com"
+        },
+        {
+          "nome": "Armelindo Souza",
+          "telefone": "47 9 9106-0809",
+          "email": "souza.naj@hotmail.com"
+        }
+      ],
+      "Jaraguá do Sul": [
+        {
+          "nome": "Ricardo Boing",
+          "telefone": "47 9 9967-2703",
+          "email": "bebrepres@gmail.com"
+        },
+        {
+          "nome": "Armelindo Souza",
+          "telefone": "47 9 9106-0809",
+          "email": "souza.naj@hotmail.com"
+        }
+      ],
+      "Navegantes": [
+        {
+          "nome": "Ricardo Boing",
+          "telefone": "47 9 9967-2703",
+          "email": "bebrepres@gmail.com"
+        },
+        {
+          "nome": "Armelindo Souza",
+          "telefone": "47 9 9106-0809",
+          "email": "souza.naj@hotmail.com"
+        }
+      ],
+      "Penha": [
+        {
+          "nome": "Ricardo Boing",
+          "telefone": "47 9 9967-2703",
+          "email": "bebrepres@gmail.com"
+        },
+        {
+          "nome": "Armelindo Souza",
+          "telefone": "47 9 9106-0809",
+          "email": "souza.naj@hotmail.com"
+        }
+      ],
+      "Pomerode": [
+        {
+          "nome": "Ricardo Boing",
+          "telefone": "47 9 9967-2703",
+          "email": "bebrepres@gmail.com"
+        },
+        {
+          "nome": "Armelindo Souza",
+          "telefone": "47 9 9106-0809",
+          "email": "souza.naj@hotmail.com"
+        }
+      ],
+      "Rio do Sul": [
+        {
+          "nome": "Ricardo Boing",
+          "telefone": "47 9 9967-2703",
+          "email": "bebrepres@gmail.com"
+        },
+        {
+          "nome": "Armelindo Souza",
+          "telefone": "47 9 9106-0809",
+          "email": "souza.naj@hotmail.com"
+        }
+      ],
+      "Timbó": [
+        {
+          "nome": "Ricardo Boing",
+          "telefone": "47 9 9967-2703",
+          "email": "bebrepres@gmail.com"
+        },
+        {
+          "nome": "Armelindo Souza",
+          "telefone": "47 9 9106-0809",
+          "email": "souza.naj@hotmail.com"
+        }
+      ],
+      "Chapecó": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Xanxerê": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Dionísio Cerqueira": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Abelardo Luz": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Bom Jesus": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Novo Horizonte": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Jupiá": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Galvão": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Coronel Martins": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
+      ],
+      "Entre Rios": [
+        {
+          "nome": "Jair Enobre",
+          "telefone": "46 9 8404-4477",
+          "email": "jair@enobre.com.br"
+        }
       ]
-    },
+  },
+
     "RS": {
-      "Porto Alegre": [
+      "Bento Gonçalves": [
         {
           "nome": "Daniel Crosa - Altex Representações",
-          "telefone": "54 9975-7033",
+          "telefone": "54 9 9975-7033",
           "email": "daniel@altexrepresentacoes.com.br"
         },
         {
           "nome": "Mateus Crosa - Altex Representações",
-          "telefone": "54 99957-2301",
+          "telefone": "54 9 9957-2301",
           "email": "matheus@altexrepresentacoes.com.br"
         }
       ],
       "Caxias do Sul": [
         {
           "nome": "Daniel Crosa - Altex Representações",
-          "telefone": "54 9975-7033",
+          "telefone": "54 9 9975-7033",
           "email": "daniel@altexrepresentacoes.com.br"
         },
         {
           "nome": "Mateus Crosa - Altex Representações",
-          "telefone": "54 99957-2301",
+          "telefone": "54 9 9957-2301",
           "email": "matheus@altexrepresentacoes.com.br"
         }
       ],
-      "Bento Gonçalves": [
+      "Porto Alegre": [
         {
           "nome": "Daniel Crosa - Altex Representações",
-          "telefone": "54 9975-7033",
+          "telefone": "54 9 9975-7033",
           "email": "daniel@altexrepresentacoes.com.br"
         },
         {
           "nome": "Mateus Crosa - Altex Representações",
-          "telefone": "54 99957-2301",
+          "telefone": "54 9 9957-2301",
           "email": "matheus@altexrepresentacoes.com.br"
         }
-      ]
-    }
-  },
-  "Nordeste": {
-    "PE": {
-      "Recife": [
-        {
-          "nome": "Alexandre Carvalho - Bigga Representações",
-          "telefone": "81 9971-7052",
-          "email": "alexandre@bigarepresentacao.com.br"
-        }
-      ]
-    },
-    "BA": {
-      "Salvador": [
-        {
-          "nome": "Carlos Alberto",
-          "telefone": "71 9911-2233",
-          "email": "carlos@representacoesba.com.br"
-        }
-      ]
-    },
-    "CE": {
-      "Fortaleza": [
-        {
-          "nome": "João Lima",
-          "telefone": "85 9988-7766",
-          "email": "joao.lima@ceararep.com.br"
-        }
-      ]
-    },
-    "PB": {
-      "João Pessoa": [
-        {
-          "nome": "Marcos Silva",
-          "telefone": "83 9876-5432",
-          "email": "marcos@pbrepresentacoes.com.br"
-        }
-      ]
-    },
-    "AL": {
-      "Maceió": [
-        {
-          "nome": "Fernanda Costa",
-          "telefone": "82 9966-1122",
-          "email": "fernanda@alrep.com.br"
-        }
-      ]
-    },
-    "SE": {
-      "Aracaju": [
-        {
-          "nome": "Roberto Andrade",
-          "telefone": "79 9912-3344",
-          "email": "roberto@sergiperep.com.br"
-        }
-      ]
-    },
-    "PI": {
-      "Teresina": [
-        {
-          "nome": "Luciana Mendes",
-          "telefone": "86 9944-5566",
-          "email": "luciana@pirep.com.br"
-        }
-      ]
-    },
-    "RN": {
+      ],
       "Natal": [
         {
-          "nome": "Eduardo Freitas",
-          "telefone": "84 9987-6655",
-          "email": "eduardo@natalrep.com.br"
+          "nome": "Roberto Cocentino",
+          "telefone": "84 9 8771-8596",
+          "email": "representacao@rcocentino.com.br"
+        }
+      ],
+      "Erechim": [
+        {
+          "nome": "Rubens Elo Forte",
+          "telefone": "55 9 9966-6234",
+          "email": "eloforterubens@gmail.com"
+        }
+      ],
+      "Alegrete": [
+        {
+          "nome": "Rubens Elo Forte",
+          "telefone": "55 9 9966-6234",
+          "email": "eloforterubens@gmail.com"
+        }
+      ],
+      "Frederico Westphalen": [
+        {
+          "nome": "Rubens Elo Forte",
+          "telefone": "55 9 9966-6234",
+          "email": "eloforterubens@gmail.com"
+        }
+      ],
+      "Ijuí": [
+        {
+          "nome": "Rubens Elo Forte",
+          "telefone": "55 9 9966-6234",
+          "email": "eloforterubens@gmail.com"
+        }
+      ],
+      "Santa Maria": [
+        {
+          "nome": "Rubens Elo Forte",
+          "telefone": "55 9 9966-6234",
+          "email": "eloforterubens@gmail.com"
+        }
+      ],
+      "Santa Rosa": [
+        {
+          "nome": "Rubens Elo Forte",
+          "telefone": "55 9 9966-6234",
+          "email": "eloforterubens@gmail.com"
+        }
+      ],
+      "Santa Cruz do Sul": [
+        {
+          "nome": "Rubens Elo Forte",
+          "telefone": "55 9 9966-6234",
+          "email": "eloforterubens@gmail.com"
+        }
+      ],
+      "Passo Fundo": [
+        {
+          "nome": "Rubens Elo Forte",
+          "telefone": "55 9 9966-6234",
+          "email": "eloforterubens@gmail.com"
+        }
+      ],
+      "Uruguaiana": [
+        {
+          "nome": "Rubens Elo Forte",
+          "telefone": "55 9 9966-6234",
+          "email": "eloforterubens@gmail.com"
+        }
+      ]
+     }
+    },
+
+
+
+
+
+ "Nordeste": {
+
+  "BA": {
+    "Feira de Santana": [
+      {
+        "nome": "Carlos Moura",
+        "telefone": "75 9 9981-1414 / 75 3021-3321",
+        "email": "cmourarep@gmail.com"
+      }
+    ],
+    "Vitória da Conquista": [
+      {
+        "nome": "Daniel Leite - Dajol Representações",
+        "telefone": "77 9 8829-6257",
+        "email": "dajolrep1@gmail.com"
+      }
+    ],
+    "Porto Seguro": [
+      {
+        "nome": "Daniel Leite - Dajol Representações",
+        "telefone": "77 9 8829-6257",
+        "email": "dajolrep1@gmail.com"
+      }
+    ],
+    "Ilhéus": [
+      {
+        "nome": "Daniel Leite - Dajol Representações",
+        "telefone": "77 9 8829-6257",
+        "email": "dajolrep1@gmail.com"
+      }
+    ],
+    "Barreiras": [
+      {
+        "nome": "Daniel Leite - Dajol Representações",
+        "telefone": "77 9 8829-6257",
+        "email": "dajolrep1@gmail.com"
+      }
+    ],
+    "Salvador": [
+      {
+        "nome": "Paulo - Fenix Portas",
+        "telefone": "71 99148-9825",
+        "email": "fenixportas@terra.com.br"
+      },
+      {
+        "nome": "Marina - Fenix Portas",
+        "telefone": "71 99157-6393",
+        "email": "fenixportas@terra.com.br"
+      }
+    ]
+  },
+  "AL": {
+    "Maceió": [
+      {
+        "nome": "Osny Junior",
+        "telefone": "82 9 9659-9022",
+        "email": "osnysouzajr@gmail.com"
+      }
+    ]
+  },
+  "CE": {
+    "Fortaleza": [
+      {
+        "nome": "Helmo Coelho",
+        "telefone": "85 9 9995-2111",
+        "email": "repelmo@gmail.com"
+      }
+    ]
+  },
+  "MA": {
+    "Maranhão": [
+      {
+        "nome": "Antonio Mohana - Portas São Luis",
+        "telefone": "98 9 8114-0303",
+        "email": "portas.saoluis@gmail.com "
+      }
+    ]
+  },
+  "PB": {
+    "Campina Grande": [
+      {
+        "nome": "Ivanilson Lucena",
+        "telefone": "83 9 9332-2368",
+        "email": "imlucena13@gmail.com"
+      }
+    ],
+    "João Pessoa": [
+      {
+        "nome": "Ivanilson Lucena",
+        "telefone": "83 9 9332-2368",
+        "email": "imlucena13@gmail.com"
+      }
+    ]
+  },
+  "PE": {
+    "Recife": [
+      {
+        "nome": "Alexandre Carvalho - Bigga Representações",
+        "telefone": "81 9 9971-7052",
+        "email": "alexandre@bigarepresentacao.com.br"
+      }
+    ],
+    "Petrolina": [
+      {
+        "nome": "Marcelo Correia - Macorreira Representações",
+        "telefone": "87 9 9135-1697",
+        "email": "macorreiarepresentacoes@gmail.com"
+      }
+    ]
+  },
+  "SE": {
+    "Aracaju": [
+      {
+        "nome": "Junior Ribeiro",
+        "telefone": "79 9 8826-1400",
+        "email": "contato@juniorribeiro.com.br"
+      },
+      {
+        "nome": "João Sócio",
+        "telefone": "79 9 9830-2225",
+        "email": "comercial@juniorribeiro.com"
+      }
+    ]
+  }
+},
+ 
+  "Centro-Oeste": {
+    "MT": {
+      "Cuiabá": [
+        {
+          "nome": "Evandro Baravelli - Bavarelli Representações",
+          "telefone": "65 99284-8643",
+          "email": ["cbaravelli@hotmail.com.br", "evandro@baravellirepresenta.com.br"]
+        }
+      ],
+      "Rondonópolis": [
+        {
+          "nome": "Evandro Baravelli - Bavarelli Representações",
+          "telefone": "65 99284-8643",
+          "email": ["cbaravelli@hotmail.com.br", "evandro@baravellirepresenta.com.br"]
+        }
+      ],
+      "Campo Grande": [
+        {
+          "nome": "Fabio Braga",
+          "telefone": "22 97401-7835",
+          "email": ["fabio.braga10@hotmail.com.br"]
         }
       ]
     },
-    "MA": {
-      "São Luís": [
-        {
-          "nome": "Camila Rocha",
-          "telefone": "98 9911-7788",
-          "email": "camila@marep.com.br"
-        }
-      ]
-    }
-  },
-
-  "Centro-Oeste": {
     "GO": {
       "Goiânia": [
         {
           "nome": "Gedyr Vieira",
           "telefone": "62 98407-7019",
-          "email": "contato@gvs.arq.br"
+          "email": ["contato@gvs.arq.br"]
         },
         {
           "nome": "Samuel",
-          "telefone": "62 9684-5525",
-          "email": ""
+          "telefone": "62 99684-5525",
+          "email": []
         }
       ],
-      "Anápolis": [
+      "Formosa": [
         {
-          "nome": "Gedyr Vieira",
-          "telefone": "62 98407-7019",
-          "email": "contato@gvs.arq.br"
+          "nome": "Renato Tim",
+          "telefone": "61 98114-1377",
+          "email": ["renato@timadel.com.br"]
         }
-      ]
-    },
-    "DF": {
-      "Brasília": [
+      ],
+      "Cristalina": [
         {
-          "nome": "Gedyr Vieira",
-          "telefone": "62 98407-7019",
-          "email": "contato@gvs.arq.br"
-        }
-      ]
-    },
-    "MT": {
-      "Cuiabá": [
-        {
-          "nome": "Carlos Eduardo",
-          "telefone": "65 9922-3344",
-          "email": "carlos@mtrepresentacoes.com.br"
+          "nome": "Renato Tim",
+          "telefone": "61 98114-1377",
+          "email": ["renato@timadel.com.br"]
         }
       ]
     },
     "MS": {
       "Campo Grande": [
         {
-          "nome": "Fernanda Ribeiro",
-          "telefone": "67 9988-7766",
-          "email": "fernanda@msrep.com.br"
+          "nome": "Rodrigo Dalpiaz",
+          "telefone": "67 99922-7119",
+          "email": ["dalpiaz.artefatos@gmail.com"]
+        }
+      ]
+    },
+    "DF": {
+      "Brasília": [
+        {
+          "nome": "Renato Timadel",
+          "telefone": ["61 99981-7202", "61 98114-1377"],
+          "email": ["timadel@timadel.com.br", "renato@timadel.com.br"]
+        },
+        {
+          "nome": "Marina",
+          "telefone": "61 99161-1811",
+          "email": ["marina@timadel.com.br"]
         }
       ]
     }
+},
+ "Norte": {
+  "AM": {
+    "Manaus": [
+      {
+        "nome": "Enio de Oliveira Gama",
+        "telefone": "92 9 8107-3777",
+        "email": "gamafilho2000@gmail.com"
+      }
+    ]
+  },
+  "PA": {
+    "Belém": [
+      {
+        "nome": "Hiran Bichara",
+        "telefone": "91 9 9309-7821",
+        "email": "hiranbichararep@gmail.com"
+      }
+    ]
+  },
+  "RO": {
+    "Porto Velho": [
+      {
+        "nome": "Luiz Modesto",
+        "telefone": "69 9 8111-7514",
+        "email": "luizmodesto1112@hotmail.com.br"
+      }
+    ]
+  },
+  "TO": {
+    "Palmas": [
+      {
+        "nome": "Assis Junior",
+        "telefone": "63 9 9972-3160",
+        "email": "autobelrepresentacoes@gmail.com"
+      }
+    ]
   }
+}
 }

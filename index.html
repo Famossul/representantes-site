@@ -5,64 +5,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Representantes</title>
   <style>
-    :root {
-      --cor-fundo: #e1e4e1;
-      --cor-caixa: #ffffff;
-      --cor-texto: #333;
-      --cor-destaque: #2c3e50;
-      --cor-borda: #ddd;
+:root {
+      --cor-fundo: #e4e4e4;
+      --cor-caixa: hsl(0, 0%, 100%);
+      --cor-texto: #000000;
+      --cor-destaque: #000000;
+      --cor-borda: #11b611a4;
+      --cor-hover: #ddd9d9a4;
     }
 
     body {
       margin: 0;
-      padding: 1rem;
-      font-family: 'Segoe UI', sans-serif;
+      padding: 0;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       background-color: var(--cor-fundo);
       color: var(--cor-texto);
     }
 
-    .container {
-      max-width: 100%;
-      margin: 0 auto;
-      padding: 1rem;
+    /* Cabeçalho */
+    header {
       background-color: var(--cor-caixa);
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    header img {
+      max-width: 200px;
+      height: auto;
+      cursor: pointer;
+      filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+    }
+
+    .container {
+      width: 100%;
+      max-width: 100%;
+      margin: 1rem auto;
+      padding: 1.2rem;
+      background-color: var(--cor-caixa);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
 
     h1 {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       text-align: center;
       color: var(--cor-destaque);
-      margin-bottom: 1rem;
+      margin-bottom: 1.2rem;
     }
 
     label {
-      font-weight: bold;
+      font-weight: 600;
       margin-top: 1rem;
       display: block;
+      color: var(--cor-destaque);
+      font-size: 1rem;
     }
 
     select {
       width: 100%;
-      padding: 0.75rem;
-      font-size: 1rem;
+      padding: 1rem;
+      font-size: 1.1rem;
       margin-top: 0.5rem;
       border: 1px solid var(--cor-borda);
-      border-radius: 6px;
+      border-radius: 10px;
       background-color: #fff;
+      color: var(--cor-texto);
+      transition: all 0.3s ease;
+    }
+
+    select:focus {
+      outline: none;
+      border-color: var(--cor-destaque);
+      box-shadow: 0 0 6px rgba(44,62,80,0.4);
+    }
+
+    select:hover {
+      background-color: var(--cor-hover);
+      cursor: pointer;
     }
 
     #contato {
-      margin-top: 2rem;
+      margin-top: 1.5rem;
     }
 
     .representante {
       padding: 1rem;
       margin-bottom: 1rem;
-      background-color: #f0f4f8;
-      border-radius: 6px;
-      border-left: 4px solid var(--cor-destaque);
+      background-color: #f9fbfd;
+      border-radius: 12px;
+      border: 1px solid var(--cor-borda);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
 
     .representante strong {
@@ -73,32 +106,50 @@
     .representante span {
       display: block;
       margin-top: 0.3rem;
-      font-size: 0.95rem;
+      font-size: 1rem;
+      color: var(--cor-texto);
+      word-wrap: break-word;
     }
 
     .logo {
-    text-align: center;
-    margin-bottom: 1rem;
+      text-align: center;
+      margin-bottom: 1rem;
     }
 
     .logo img {
-    max-width: 180px;
-    height: auto;
-    }   
+      max-width: 140px;
+      height: auto;
+      filter: drop-shadow(0 4px 6px rgba(0,0,0,0.1));
+    }
 
+    /* Ajustes para telas maiores */
     @media (min-width: 600px) {
       .container {
         max-width: 500px;
+      }
+      h1 {
+        font-size: 1.8rem;
       }
     }
   </style>
 </head>
 <body>
+   <!-- Cabeçalho -->
+  <header>
+    <a href="https://famossul.com.br/" target="_blank">
+      <img src="img/Famossul-branco.png" alt="Famossul Cabeçalho" />
+    </a>
+  </header>
+
+  
+
   <div class="container">
     <div class="logo">
-      <img src="Logo.png" alt="Logo da empresa" />
-    </div>
-    <h1>Representantes</h1>
+  <a href="https://famossul.com.br/" target="_blank">
+    
+  </a>
+</div>
+    <h1>REPRESENTANTES</h1>
 
     <label for="regiao">Região:</label>
     <select id="regiao" onchange="carregarEstados()">
@@ -142,7 +193,7 @@
       document.getElementById("contato").innerHTML = "";
 
       if (regiao && dados[regiao]) {
-        Object.keys(dados[regiao]).forEach(estado => {
+        Object.keys(dados[regiao]).sort().forEach(estado => {
           const opt = document.createElement("option");
           opt.value = estado;
           opt.textContent = estado;
@@ -159,7 +210,7 @@
       document.getElementById("contato").innerHTML = "";
 
       if (regiao && estado && dados[regiao][estado]) {
-        Object.keys(dados[regiao][estado]).forEach(cidade => {
+        Object.keys(dados[regiao][estado]).sort().forEach(cidade => {
           const opt = document.createElement("option");
           opt.value = cidade;
           opt.textContent = cidade;
@@ -190,5 +241,4 @@
     }
   </script>
 </body>
-
 </html>
