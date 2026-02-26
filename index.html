@@ -5,169 +5,167 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contatos</title>
   <style>
- :root {
-  --cor-fundo: #e4e4e4;
-  --cor-caixa: #ffffff;
-  --cor-texto: #000000;
-  --cor-destaque: #000000;
-  --cor-borda: #11b611a4;
-  --cor-hover: #ddd9d9a4;
-}
+    :root {
+      --cor-fundo: #e4e4e4;
+      --cor-caixa: #ffffff;
+      --cor-texto: #000000;
+      --cor-destaque: #000000;
+      --cor-borda: #11b611a4;
+      --cor-hover: #ddd9d9a4;
+    }
 
-/* 🔹 Reset e base responsiva */
-* {
-  box-sizing: border-box;
-}
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--cor-fundo);
+      color: var(--cor-texto);
+    }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  background-color: var(--cor-fundo);
-  color: var(--cor-texto);
-}
+    header {
+      background-color: var(--cor-caixa);
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
 
-header {
-  background-color: var(--cor-caixa);
-  padding: 1rem;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
+    header img {
+      max-width: 100%;
+      height: auto;
+    }
 
-header img {
-  max-width: 100%;
-  height: auto;
-}
+    .container {
+      width: 95%;
+      max-width: 500px;
+      margin: 1rem auto;
+      padding: 1.2rem;
+      background-color: var(--cor-caixa);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
 
-.container {
-  width: 95%;
-  max-width: 500px;
-  margin: 1rem auto;
-  padding: 1.2rem;
-  background-color: var(--cor-caixa);
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
+    h1 {
+      font-size: 1.6rem;
+      text-align: center;
+      color: var(--cor-destaque);
+      margin-bottom: 1.2rem;
+    }
 
-h1 {
-  font-size: 1.6rem;
-  text-align: center;
-  color: var(--cor-destaque);
-  margin-bottom: 1.2rem;
-}
+    label {
+      font-weight: 600;
+      margin-top: 1rem;
+      display: block;
+      color: var(--cor-destaque);
+      font-size: 1rem;
+    }
 
-label {
-  font-weight: 600;
-  margin-top: 1rem;
-  display: block;
-  color: var(--cor-destaque);
-  font-size: 1rem;
-}
+    select, input[type="text"] {
+      width: 100%;
+      height: 48px;
+      padding: 0 1rem;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      border: 1px solid var(--cor-borda);
+      border-radius: 10px;
+      background-color: #fff;
+      color: var(--cor-texto);
+      transition: all 0.3s ease;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      box-sizing: border-box;
+    }
 
-select {
-  width: 100%;
-  padding: 1rem;
-  font-size: 1rem;
-  margin-top: 0.5rem;
-  border: 1px solid var(--cor-borda);
-  border-radius: 10px;
-  background-color: #fff;
-  color: var(--cor-texto);
-  transition: all 0.3s ease;
-}
+    select:focus, input[type="text"]:focus {
+      background-color: var(--cor-hover);
+      outline: none;
+    }
 
-select:hover {
-  background-color: var(--cor-hover);
-  cursor: pointer;
-}
+    #contato {
+      margin-top: 1.5rem;
+    }
 
-#contato {
-  margin-top: 1.5rem;
-}
+    .representante {
+      padding: 1rem;
+      margin-bottom: 1rem;
+      background-color: #f9fbfd;
+      border-radius: 12px;
+      border: 1px solid var(--cor-borda);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
 
-.representante {
-  padding: 1rem;
-  margin-bottom: 1rem;
-  background-color: #f9fbfd;
-  border-radius: 12px;
-  border: 1px solid var(--cor-borda);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
+    .representante strong {
+      font-size: 1.1rem;
+      color: var(--cor-destaque);
+    }
 
-.representante strong {
-  font-size: 1.1rem;
-  color: var(--cor-destaque);
-}
+    .representante span {
+      display: block;
+      margin-top: 0.3rem;
+      font-size: 1rem;
+      color: var(--cor-texto);
+    }
 
-.representante span {
-  display: block;
-  margin-top: 0.3rem;
-  font-size: 1rem;
-  color: var(--cor-texto);
-}
+    .representante a img {
+      width: 24px;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
 
-.representante a img {
-  width: 24px;
-  margin-right: 8px;
-  vertical-align: middle;
-}
+    #btn-flutuante {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #11b611a4;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      cursor: pointer;
+      z-index: 9999;
+    }
+    #btn-flutuante img {
+      width: 32px;
+      height: 32px;
+    }
+    #btn-flutuante:hover {
+      background-color: #0e9e0e;
+    }
 
-/* 🔹 Responsividade para celulares */
-@media (max-width: 600px) {
-  .container {
-    width: 100%;
-    margin: 0;
-    padding: 1rem;
-    border-radius: 0;
-  }
-
-  h1 {
-    font-size: 1.2rem;
-    line-height: 1.4;
-  }
-
-  label {
-    font-size: 0.95rem;
-  }
-
-  select {
-    font-size: 0.95rem;
-    padding: 0.9rem;
-  }
-
-  .representante {
-    padding: 0.9rem;
-  }
-
-  .representante strong {
-    font-size: 1rem;
-  }
-
-  .representante span {
-    font-size: 0.9rem;
-  }
-}
-
+    @media (max-width: 600px) {
+      .container {
+        width: 100%;
+        margin: 0;
+        padding: 1rem;
+        border-radius: 0;
+      }
+      h1 { font-size: 1.2rem; line-height: 1.4; }
+      label { font-size: 0.95rem; }
+      .representante strong { font-size: 1rem; }
+      .representante span { font-size: 0.9rem; }
+    }
   </style>
 </head>
 <body>
-   <header>
+  <header>
     <a href="https://famossul.com.br/" target="_blank">
-      <img src="famossul-branco.png" alt="Famossul Cabeçalho" />
+      <img src="Famossul-branco.png" alt="Famossul Cabeçalho" />
     </a>
   </header>
 
-  <div class="container">
-    <h1>Nossos canais de atendimento: </h1>
+  <main class="container">
+    <h1>Nossos canais de atendimento:</h1>
 
     <label for="area">Selecione a área:</label>
     <select id="area" onchange="mostrarSubarea()">
       <option value="">Selecione</option>
-      <option value="comercial">Comercial</option>
       <option value="logistica">Logística</option>
       <option value="rastreio">Rastreio</option>
       <option value="sac">SAC</option>
-      
+      <option value="comercial">Comercial</option>
     </select>
 
     <div id="subarea-container" style="display:none;">
@@ -179,7 +177,6 @@ select:hover {
       </select>
     </div>
 
-    <!-- Novo container para regiões/estados/cidades -->
     <div id="regiao-container" style="display:none;">
       <label for="regiao">Região:</label>
       <select id="regiao" onchange="carregarEstados()">
@@ -191,158 +188,173 @@ select:hover {
         <option value="">Selecione um estado</option>
       </select>
 
-      <label for="cidade">Cidade:</label>
-      <select id="cidade" onchange="mostrarContato()">
-        <option value="">Selecione uma cidade</option>
-      </select>
+      <div id="cidade-container" style="display:none;">
+        <label for="cidade-search">Cidade:</label>
+        <input type="text" id="cidade-search" placeholder="Digite a cidade..."
+               list="lista-cidades" oninput="mostrarContato()" />
+        <datalist id="lista-cidades"></datalist>
+      </div>
     </div>
 
     <div id="contato"></div>
-  </div>
-  
+  </main>
+
+  <a href="https://wa.me/5541995030522" target="_blank" id="btn-flutuante" aria-label="Atendimento WhatsApp" title="Atendimento WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Atendimento">
+  </a>
+
   <script>
-  let dados = {
-    logistica: [
-      { nome: "Luan", telefone: "(47) 9998-9145", email: "logistica@famossul.com.br" },
-      { nome: "Mayron", telefone: "(41) 98813-9380", email: "logistica1@famossul.com.br" }
-    ],
-    rastreio: [
-      { nome: "Graziela", telefone: "(41) 99503-0522", email: "entregas@famossul.com.br" }
-    ],
-    sac: [
-      { nome: "Carlos/Maurici", telefone: "(41) 98895-7643", email: "tecnico@famossul.com.br" }
-    ],
-    comercial: {
-      portas: {}, // será preenchido via JSON
-      forro: [
-        { nome: "Tetto Revest", telefone: "(41) 98727-9981", email: "vendas1@tettorevest.com.br" }
-      ]
-    }
-  };
+    let dados = {
+      logistica: [
+        { nome: "Luan", telefone: "(47) 9998-9145", email: "logistica@famossul.com.br" },
+        { nome: "Mayron", telefone: "(41) 98813-9380", email: "logistica1@famossul.com.br" }
+      ],
+      rastreio: [
+        { nome: "Graziela", telefone: "(41) 99503-0522", email: "entregas@famossul.com.br" }
+      ],
+      sac: [
+        { nome: "Carlos/Maurici", telefone: "(41) 98895-7643", email: "tecnico@famossul.com.br" }
+      ],
+      comercial: {
+        portas: {},
+        forro: [
+          { nome: "Tetto Revest", telefone: "(41) 98727-9981", email: "vendas1@tettorevest.com.br" }
+        ]
+      }
+    };
 
-  // Carregar dados externos (representantes.json)
-  fetch('representantes.json')
-    .then(res => res.json())
-    .then(json => {
-      dados.comercial.portas = json;
-      const regiaoSelect = document.getElementById("regiao");
-      Object.keys(json).sort().forEach(regiao => {
-        const opt = document.createElement("option");
-        opt.value = regiao;
-        opt.textContent = regiao;
-        regiaoSelect.appendChild(opt);
+    // 🔹 Carrega os representantes externos
+    fetch('representantes.json')
+      .then(res => res.json())
+      .then(json => {
+        dados.comercial.portas = json;
+        const regiaoSelect = document.getElementById("regiao");
+        Object.keys(json).sort().forEach(regiao => {
+          const opt = document.createElement("option");
+          opt.value = regiao;
+          opt.textContent = regiao;
+          regiaoSelect.appendChild(opt);
+        });
+      })
+      .catch(err => {
+        console.error("Erro ao carregar representantes:", err);
+        document.getElementById("contato").innerHTML =
+          "<p style='color:red;'>Não foi possível carregar os dados de representantes.</p>";
       });
-    });
 
-  function formatarTelefoneParaLink(telefone) {
-    const numero = telefone.replace(/\D/g, "");
-    return `https://wa.me/55${numero}`;
-  }
-
-  function mostrarSubarea() {
-    const area = document.getElementById("area").value;
-    const subareaContainer = document.getElementById("subarea-container");
-    const div = document.getElementById("contato");
-    div.innerHTML = "";
-
-    if (area === "comercial") {
-      subareaContainer.style.display = "block";
-    } else {
-      subareaContainer.style.display = "none";
-      document.getElementById("regiao-container").style.display = "none";
-      mostrarContato();
-    }
-  }
-
-  function mostrarSubareaPortas() {
-    const subarea = document.getElementById("subarea").value;
-    const regiaoContainer = document.getElementById("regiao-container");
-    const div = document.getElementById("contato");
-    div.innerHTML = "";
-
-    if (subarea === "portas") {
-      regiaoContainer.style.display = "block";
-    } else {
-      regiaoContainer.style.display = "none";
-      mostrarContato();
-    }
-  }
-
-  function carregarEstados() {
-    const regiao = document.getElementById("regiao").value;
-    const estadoSelect = document.getElementById("estado");
-    estadoSelect.innerHTML = '<option value="">Selecione um estado</option>';
-    document.getElementById("cidade").innerHTML = '<option value="">Selecione uma cidade</option>';
-    document.getElementById("contato").innerHTML = "";
-
-    if (regiao && dados.comercial.portas[regiao]) {
-      Object.keys(dados.comercial.portas[regiao]).sort().forEach(estado => {
-        const opt = document.createElement("option");
-        opt.value = estado;
-        opt.textContent = estado;
-        estadoSelect.appendChild(opt);
-      });
-    }
-  }
-
-  function carregarCidades() {
-    const regiao = document.getElementById("regiao").value;
-    const estado = document.getElementById("estado").value;
-    const cidadeSelect = document.getElementById("cidade");
-    cidadeSelect.innerHTML = '<option value="">Selecione uma cidade</option>';
-    document.getElementById("contato").innerHTML = "";
-
-        if (regiao && estado && dados.comercial.portas[regiao][estado]) {
-      Object.keys(dados.comercial.portas[regiao][estado]).sort().forEach(cidade => {
-        const opt = document.createElement("option");
-        opt.value = cidade;
-        opt.textContent = cidade;
-        cidadeSelect.appendChild(opt);
-      });
-    }
-  }
-
-  function mostrarContato() {
-    const area = document.getElementById("area").value;
-    const subarea = document.getElementById("subarea").value;
-    const regiao = document.getElementById("regiao") ? document.getElementById("regiao").value : "";
-    const estado = document.getElementById("estado") ? document.getElementById("estado").value : "";
-    const cidade = document.getElementById("cidade") ? document.getElementById("cidade").value : "";
-    const div = document.getElementById("contato");
-    div.innerHTML = "";
-
-    if (area && area !== "comercial" && dados[area]) {
-      dados[area].forEach(rep => div.innerHTML += renderRepresentante(rep));
+    function formatarTelefoneParaLink(telefone) {
+      const numero = telefone.replace(/\D/g, "");
+      return `https://wa.me/55${numero}`;
     }
 
-    if (area === "comercial" && subarea) {
-      if (subarea === "portas" && regiao && estado && cidade) {
-        const reps = dados.comercial.portas[regiao][estado][cidade];
-        reps.forEach(rep => div.innerHTML += renderRepresentante(rep));
-      } else if (subarea === "forro") {
-        const reps = dados.comercial.forro;
-        reps.forEach(rep => div.innerHTML += renderRepresentante(rep));
+    function mostrarSubarea() {
+      const area = document.getElementById("area").value;
+      const subareaContainer = document.getElementById("subarea-container");
+      const div = document.getElementById("contato");
+      div.innerHTML = "";
+
+      if (area === "comercial") {
+        subareaContainer.style.display = "block";
+      } else {
+        subareaContainer.style.display = "none";
+        document.getElementById("regiao-container").style.display = "none";
+        mostrarContato();
       }
     }
-  }
 
-  function renderRepresentante(rep) {
-    return `
-      <div class="representante">
-        <strong>${rep.nome}</strong>
-        <span>
-          <a href="${formatarTelefoneParaLink(rep.telefone)}" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"  
-                 alt="WhatsApp" width="20" style="vertical-align:middle; margin-right:5px;">
-            ${rep.telefone}
-          </a>
-        </span>
-        ${rep.email ? `<span>📧 <a href="mailto:${rep.email}">${rep.email}</a></span>` : ""}
-      </div>
-    `;
-  }
+    function mostrarSubareaPortas() {
+      const subarea = document.getElementById("subarea").value;
+      const regiaoContainer = document.getElementById("regiao-container");
+      const div = document.getElementById("contato");
+      div.innerHTML = "";
+
+      if (subarea === "portas") {
+        regiaoContainer.style.display = "block";
+      } else {
+        regiaoContainer.style.display = "none";
+        mostrarContato();
+      }
+    }
+
+    function carregarEstados() {
+      const regiao = document.getElementById("regiao").value;
+      const estadoSelect = document.getElementById("estado");
+      estadoSelect.innerHTML = '<option value="">Selecione um estado</option>';
+      document.getElementById("lista-cidades").innerHTML = "";
+      document.getElementById("contato").innerHTML = "";
+
+      if (regiao && dados.comercial.portas[regiao]) {
+        Object.keys(dados.comercial.portas[regiao]).sort().forEach(estado => {
+          const opt = document.createElement("option");
+          opt.value = estado;
+          opt.textContent = estado;
+          estadoSelect.appendChild(opt);
+        });
+      }
+    }
+
+    function carregarCidades() {
+      const regiao = document.getElementById("regiao").value;
+      const estado = document.getElementById("estado").value;
+      const lista = document.getElementById("lista-cidades");
+      lista.innerHTML = "";
+      document.getElementById("contato").innerHTML = "";
+
+      if (regiao && estado && dados.comercial.portas[regiao][estado]) {
+        Object.keys(dados.comercial.portas[regiao][estado]).sort().forEach(cidade => {
+          const opt = document.createElement("option");
+          opt.value = cidade;
+          lista.appendChild(opt);
+        });
+        document.getElementById("cidade-container").style.display = "block";
+      } else {
+        document.getElementById("cidade-container").style.display = "none";
+      }
+    }
+
+    function mostrarContato() {
+      const area = document.getElementById("area").value;
+      const subarea = document.getElementById("subarea").value;
+      const regiao = document.getElementById("regiao")?.value || "";
+      const estado = document.getElementById("estado")?.value || "";
+      const cidade = document.getElementById("cidade-search")?.value || "";
+      const div = document.getElementById("contato");
+      div.innerHTML = "";
+
+      if (area && area !== "comercial" && dados[area]) {
+        div.innerHTML = dados[area].map(rep => renderRepresentante(rep)).join("");
+      }
+
+      if (area === "comercial" && subarea) {
+        if (subarea === "portas" && regiao && estado && cidade) {
+          const reps = dados.comercial.portas[regiao][estado][cidade];
+          if (reps) {
+            div.innerHTML = reps.map(rep => renderRepresentante(rep)).join("");
+          } else {
+            div.innerHTML = "<p style='color:red;'>Cidade não encontrada.</p>";
+          }
+        } else if (subarea === "forro") {
+          const reps = dados.comercial.forro;
+          div.innerHTML = reps.map(rep => renderRepresentante(rep)).join("");
+        }
+      }
+    }
+
+    function renderRepresentante(rep) {
+      return `
+        <div class="representante">
+          <strong>${rep.nome}</strong>
+          <span>
+            <a href="${formatarTelefoneParaLink(rep.telefone)}" target="_blank">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+                   alt="WhatsApp" width="20" style="vertical-align:middle; margin-right:5px;">
+              ${rep.telefone}
+            </a>
+          </span>
+          ${rep.email ? `<span>📧 <a href="mailto:${rep.email}">${rep.email}</a></span>` : ""}
+        </div>
+      `;
+    }
   </script>
 </body>
 </html>
-
-
