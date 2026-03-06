@@ -11,9 +11,7 @@
 --cor-fundo:#e4e4e4;
 --cor-caixa:#ffffff;
 --cor-texto:#000;
---cor-destaque:#000;
 --cor-borda:#11b611a4;
---cor-hover:#f1f1f1;
 }
 
 body{
@@ -66,21 +64,12 @@ font-size:15px;
 box-sizing:border-box;
 }
 
-select:focus,input:focus{
-outline:none;
-background:var(--cor-hover);
-}
-
 .representante{
 margin-top:15px;
 padding:15px;
 border-radius:10px;
 background:#f9fbfd;
 border:1px solid var(--cor-borda);
-}
-
-.representante strong{
-font-size:16px;
 }
 
 .representante span{
@@ -90,11 +79,11 @@ margin-top:5px;
 
 .representante a{
 text-decoration:none;
-color:#000;
+color:black;
 }
 
 .whats{
-display:inline-flex;
+display:flex;
 align-items:center;
 gap:6px;
 }
@@ -156,7 +145,7 @@ width:32px;
 <h1>Nossos canais de atendimento</h1>
 
 <label>Área</label>
-<select id="area" onchange="mostrarSubarea()">
+<select id="area">
 <option value="">Selecione</option>
 <option value="logistica">Logística</option>
 <option value="rastreio">Rastreio</option>
@@ -167,7 +156,7 @@ width:32px;
 <div id="subarea-box" style="display:none">
 
 <label>Produto</label>
-<select id="subarea" onchange="mostrarSubareaPortas()">
+<select id="subarea">
 <option value="">Selecione</option>
 <option value="portas">Portas e Componentes</option>
 <option value="forro">Forro Vinílico</option>
@@ -178,10 +167,14 @@ width:32px;
 <div id="regiao-box" style="display:none">
 
 <label>Região</label>
-<select id="regiao" onchange="carregarEstados()"></select>
+<select id="regiao">
+<option value="">Selecione</option>
+</select>
 
 <label>Estado</label>
-<select id="estado" onchange="carregarCidades()"></select>
+<select id="estado">
+<option value="">Selecione</option>
+</select>
 
 <div id="cidade-box" style="display:none">
 
@@ -203,6 +196,21 @@ width:32px;
 </a>
 
 <script>
+
+const area = document.getElementById("area")
+const subarea = document.getElementById("subarea")
+const regiao = document.getElementById("regiao")
+const estado = document.getElementById("estado")
+const cidadeBusca = document.getElementById("cidadeBusca")
+
+const subareaBox = document.getElementById("subarea-box")
+const regiaoBox = document.getElementById("regiao-box")
+const cidadeBox = document.getElementById("cidade-box")
+
+const cidadeLista = document.getElementById("cidadeLista")
+const contato = document.getElementById("contato")
+
+let listaCidades=[]
 
 let dados={
 logistica:[
@@ -226,26 +234,23 @@ forro:[
 fetch("representantes.json")
 .then(r=>r.json())
 .then(json=>{
+
 dados.comercial.portas=json
-
-let regiaoSelect=document.getElementById("regiao")
-
-regiaoSelect.innerHTML='<option value="">Selecione</option>'
 
 Object.keys(json).sort().forEach(r=>{
 let o=document.createElement("option")
 o.value=r
 o.textContent=r
-regiaoSelect.appendChild(o)
-})
+regiao.appendChild(o)
 })
 
-function mostrarSubarea(){
+})
 
-let area=areaSelect.value
+area.addEventListener("change",()=>{
+
 contato.innerHTML=""
 
-if(area==="comercial")
+if(area.value==="comercial")
 subareaBox.style.display="block"
 else{
 subareaBox.style.display="none"
@@ -253,26 +258,28 @@ regiaoBox.style.display="none"
 mostrarContato()
 }
 
-}
+})
 
-function mostrarSubareaPortas(){
+subarea.addEventListener("change",()=>{
 
-let sub=subarea.value
+contato.innerHTML=""
 
-if(sub==="portas")
+if(subarea.value==="portas")
 regiaoBox.style.display="block"
 else{
 regiaoBox.style.display="none"
 mostrarContato()
 }
 
-}
+})
 
-function carregarEstados(){
+regiao.addEventListener("change",()=>{
 
 estado.innerHTML='<option value="">Selecione</option>'
 
 let r=regiao.value
+
+if(!r)return
 
 Object.keys(dados.comercial.portas[r]).forEach(e=>{
 let o=document.createElement("option")
@@ -281,20 +288,20 @@ o.textContent=e
 estado.appendChild(o)
 })
 
-}
+})
 
-function carregarCidades(){
+estado.addEventListener("change",()=>{
 
 cidadeBox.style.display="block"
 
 let r=regiao.value
 let e=estado.value
 
-window.listaCidades=Object.keys(dados.comercial.portas[r][e]).sort()
+listaCidades=Object.keys(dados.comercial.portas[r][e]).sort()
 
-mostrarListaCidades(listaCidades)
+mostrarLista(listaCidades)
 
-}
+})
 
 cidadeBusca.addEventListener("input",()=>{
 
@@ -302,11 +309,11 @@ let filtro=cidadeBusca.value.toLowerCase()
 
 let filtradas=listaCidades.filter(c=>c.toLowerCase().includes(filtro))
 
-mostrarListaCidades(filtradas)
+mostrarLista(filtradas)
 
 })
 
-function mostrarListaCidades(lista){
+function mostrarLista(lista){
 
 cidadeLista.innerHTML=""
 
@@ -337,15 +344,21 @@ function mostrarContato(){
 
 contato.innerHTML=""
 
-let area=areaSelect.value
+if(area.value!=="comercial"){
 
-if(area!=="comercial"){
-dados[area].forEach(r=>contato.innerHTML+=card(r))
+dados[area.value].forEach(r=>{
+contato.innerHTML+=card(r)
+})
+
 return
 }
 
 if(subarea.value==="forro"){
-dados.comercial.forro.forEach(r=>contato.innerHTML+=card(r))
+
+dados.comercial.forro.forEach(r=>{
+contato.innerHTML+=card(r)
+})
+
 return
 }
 
@@ -353,14 +366,18 @@ let r=regiao.value
 let e=estado.value
 let c=cidadeBusca.value
 
-if(!r||!e||!c) return
+if(!r||!e||!c)return
 
 let reps=dados.comercial.portas[r][e][c]
 
-if(reps)
-reps.forEach(rep=>contato.innerHTML+=card(rep))
-else
+if(!reps){
 contato.innerHTML="<p>Cidade não encontrada</p>"
+return
+}
+
+reps.forEach(rep=>{
+contato.innerHTML+=card(rep)
+})
 
 }
 
@@ -368,14 +385,14 @@ function card(rep){
 
 let numero=rep.telefone.replace(/\D/g,"")
 
-return`
+return `
 
 <div class="representante">
 
 <strong>${rep.nome}</strong>
 
 <span class="whats">
-<a target="_blank" href="https://wa.me/55${numero}">
+<a href="https://wa.me/55${numero}" target="_blank">
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 ${rep.telefone}
 </a>
