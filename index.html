@@ -3,28 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Contatos</title>
 
 <style>
 
 :root{
---cor-fundo:#e4e4e4;
---cor-caixa:#ffffff;
---cor-texto:#000;
---cor-borda:#11b611a4;
+--cor1:#11b611;
+--fundo:#e4e4e4;
+--card:#ffffff;
+--borda:#dcdcdc;
 }
 
 body{
 margin:0;
 font-family:Segoe UI,Roboto,Arial;
-background:var(--cor-fundo);
+background:var(--fundo);
 }
 
 header{
 background:white;
-padding:10px;
+padding:12px;
 text-align:center;
-box-shadow:0 2px 6px rgba(0,0,0,0.1);
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
 }
 
 header img{
@@ -36,10 +37,10 @@ width:92%;
 max-width:520px;
 margin:auto;
 margin-top:15px;
-background:white;
-padding:20px;
+background:var(--card);
+padding:22px;
 border-radius:12px;
-box-shadow:0 4px 10px rgba(0,0,0,0.08);
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
 
 h1{
@@ -49,17 +50,17 @@ margin-bottom:20px;
 }
 
 label{
-font-weight:600;
 display:block;
 margin-top:12px;
+font-weight:600;
 }
 
 select,input{
 width:100%;
 padding:12px;
-margin-top:5px;
+margin-top:6px;
 border-radius:8px;
-border:1px solid var(--cor-borda);
+border:1px solid var(--borda);
 font-size:15px;
 box-sizing:border-box;
 }
@@ -68,8 +69,12 @@ box-sizing:border-box;
 margin-top:15px;
 padding:15px;
 border-radius:10px;
-background:#f9fbfd;
-border:1px solid var(--cor-borda);
+border:1px solid var(--borda);
+background:#fafafa;
+}
+
+.representante strong{
+font-size:16px;
 }
 
 .representante span{
@@ -92,14 +97,20 @@ gap:6px;
 width:20px;
 }
 
+.lista-cidades{
+position:relative;
+}
+
 #cidadeLista{
-max-height:180px;
-overflow-y:auto;
-border:1px solid #ddd;
-border-radius:8px;
-display:none;
-margin-top:5px;
+position:absolute;
+width:100%;
 background:white;
+border:1px solid var(--borda);
+border-radius:8px;
+max-height:200px;
+overflow-y:auto;
+display:none;
+z-index:1000;
 }
 
 .cidade-item{
@@ -108,7 +119,7 @@ cursor:pointer;
 }
 
 .cidade-item:hover{
-background:#f2f2f2;
+background:#f0f0f0;
 }
 
 #btn-flutuante{
@@ -117,8 +128,8 @@ bottom:20px;
 right:20px;
 width:60px;
 height:60px;
+background:var(--cor1);
 border-radius:50%;
-background:#11b611;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -158,8 +169,8 @@ width:32px;
 <label>Produto</label>
 <select id="subarea">
 <option value="">Selecione</option>
-<option value="portas">Portas e Componentes (Residencial/Laqueatto)</option>
-<option value="forro">Forro Vinílico (Tetto Revest)</option>
+<option value="portas">Portas e Componentes</option>
+<option value="forro">Forro Vinílico</option>
 </select>
 
 </div>
@@ -179,9 +190,14 @@ width:32px;
 <div id="cidade-box" style="display:none">
 
 <label>Cidade</label>
-<input type="text" id="cidadeBusca" placeholder="Digite a cidade">
+
+<div class="lista-cidades">
+
+<input id="cidadeBusca" placeholder="Digite a cidade">
 
 <div id="cidadeLista"></div>
+
+</div>
 
 </div>
 
@@ -197,22 +213,27 @@ width:32px;
 
 <script>
 
-const area = document.getElementById("area")
-const subarea = document.getElementById("subarea")
-const regiao = document.getElementById("regiao")
-const estado = document.getElementById("estado")
-const cidadeBusca = document.getElementById("cidadeBusca")
+const area=document.getElementById("area")
+const subarea=document.getElementById("subarea")
+const regiao=document.getElementById("regiao")
+const estado=document.getElementById("estado")
+const cidadeBusca=document.getElementById("cidadeBusca")
 
-const subareaBox = document.getElementById("subarea-box")
-const regiaoBox = document.getElementById("regiao-box")
-const cidadeBox = document.getElementById("cidade-box")
+const subareaBox=document.getElementById("subarea-box")
+const regiaoBox=document.getElementById("regiao-box")
+const cidadeBox=document.getElementById("cidade-box")
 
-const cidadeLista = document.getElementById("cidadeLista")
-const contato = document.getElementById("contato")
+const cidadeLista=document.getElementById("cidadeLista")
+const contato=document.getElementById("contato")
 
 let listaCidades=[]
+let dados
 
-let dados={
+fetch("representantes.json")
+.then(r=>r.json())
+.then(json=>{
+
+dados={
 logistica:[
 {nome:"Luan",telefone:"(47)9998-9145",email:"logistica@famossul.com.br"},
 {nome:"Mayron",telefone:"(41)98813-9380",email:"logistica1@famossul.com.br"}
@@ -224,18 +245,12 @@ sac:[
 {nome:"Carlos/Maurici",telefone:"(41)98895-7643",email:"tecnico@famossul.com.br"}
 ],
 comercial:{
-portas:{},
+portas:json,
 forro:[
 {nome:"Tetto Revest",telefone:"(41)98727-9981",email:"vendas1@tettorevest.com.br"}
 ]
 }
 }
-
-fetch("representantes.json")
-.then(r=>r.json())
-.then(json=>{
-
-dados.comercial.portas=json
 
 Object.keys(json).sort().forEach(r=>{
 let o=document.createElement("option")
@@ -246,7 +261,7 @@ regiao.appendChild(o)
 
 })
 
-area.addEventListener("change",()=>{
+area.onchange=()=>{
 
 contato.innerHTML=""
 
@@ -258,9 +273,9 @@ regiaoBox.style.display="none"
 mostrarContato()
 }
 
-})
+}
 
-subarea.addEventListener("change",()=>{
+subarea.onchange=()=>{
 
 contato.innerHTML=""
 
@@ -271,14 +286,13 @@ regiaoBox.style.display="none"
 mostrarContato()
 }
 
-})
+}
 
-regiao.addEventListener("change",()=>{
+regiao.onchange=()=>{
 
 estado.innerHTML='<option value="">Selecione</option>'
 
 let r=regiao.value
-
 if(!r)return
 
 Object.keys(dados.comercial.portas[r]).forEach(e=>{
@@ -288,9 +302,9 @@ o.textContent=e
 estado.appendChild(o)
 })
 
-})
+}
 
-estado.addEventListener("change",()=>{
+estado.onchange=()=>{
 
 cidadeBox.style.display="block"
 
@@ -301,17 +315,17 @@ listaCidades=Object.keys(dados.comercial.portas[r][e]).sort()
 
 mostrarLista(listaCidades)
 
-})
+}
 
-cidadeBusca.addEventListener("input",()=>{
+cidadeBusca.oninput=()=>{
 
-let filtro=cidadeBusca.value.toLowerCase()
+let termo=cidadeBusca.value.toLowerCase()
 
-let filtradas=listaCidades.filter(c=>c.toLowerCase().includes(filtro))
+let filtradas=listaCidades.filter(c=>c.toLowerCase().includes(termo))
 
-mostrarLista(filtradas)
+mostrarLista(filtradas.slice(0,50))
 
-})
+}
 
 function mostrarLista(lista){
 
@@ -327,7 +341,6 @@ div.onclick=()=>{
 
 cidadeBusca.value=c
 cidadeLista.style.display="none"
-
 mostrarContato()
 
 }
@@ -340,25 +353,26 @@ cidadeLista.style.display="block"
 
 }
 
+document.addEventListener("click",(e)=>{
+
+if(!cidadeLista.contains(e.target) && e.target!==cidadeBusca)
+cidadeLista.style.display="none"
+
+})
+
 function mostrarContato(){
 
 contato.innerHTML=""
 
 if(area.value!=="comercial"){
 
-dados[area.value].forEach(r=>{
-contato.innerHTML+=card(r)
-})
-
+dados[area.value].forEach(r=>contato.innerHTML+=card(r))
 return
 }
 
 if(subarea.value==="forro"){
 
-dados.comercial.forro.forEach(r=>{
-contato.innerHTML+=card(r)
-})
-
+dados.comercial.forro.forEach(r=>contato.innerHTML+=card(r))
 return
 }
 
@@ -375,9 +389,7 @@ contato.innerHTML="<p>Cidade não encontrada</p>"
 return
 }
 
-reps.forEach(rep=>{
-contato.innerHTML+=card(rep)
-})
+reps.forEach(rep=>contato.innerHTML+=card(rep))
 
 }
 
@@ -392,7 +404,7 @@ return `
 <strong>${rep.nome}</strong>
 
 <span class="whats">
-<a href="https://wa.me/55${numero}" target="_blank">
+<a target="_blank" href="https://wa.me/55${numero}">
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 ${rep.telefone}
 </a>
@@ -410,4 +422,3 @@ ${rep.email?`<span>📧 <a href="mailto:${rep.email}">${rep.email}</a></span>`:"
 
 </body>
 </html>
-
