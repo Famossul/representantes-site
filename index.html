@@ -1,382 +1,395 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contatos</title>
-  <style>
-   :root {
-  --cor-fundo: #e4e4e4;
-  --cor-caixa: #ffffff;
-  --cor-texto: #000000;
-  --cor-destaque: #000000;
-  --cor-borda: #11b611a4;
-  --cor-hover: #ddd9d9a4;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contatos</title>
+
+<style>
+
+:root{
+--cor-fundo:#e4e4e4;
+--cor-caixa:#ffffff;
+--cor-texto:#000;
+--cor-destaque:#000;
+--cor-borda:#11b611a4;
+--cor-hover:#f1f1f1;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  background-color: var(--cor-fundo);
-  color: var(--cor-texto);
+body{
+margin:0;
+font-family:Segoe UI,Roboto,Arial;
+background:var(--cor-fundo);
 }
 
-header {
-  background-color: var(--cor-caixa);
-  padding: 1rem;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+header{
+background:white;
+padding:10px;
+text-align:center;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
 }
 
-header img {
-  max-width: 100%;
-  height: auto;
+header img{
+max-width:180px;
 }
 
-.container {
-  width: 95%;
-  max-width: 500px;
-  margin: 1rem auto;
-  padding: 1.2rem;
-  background-color: var(--cor-caixa);
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  box-sizing: border-box;
+.container{
+width:92%;
+max-width:520px;
+margin:auto;
+margin-top:15px;
+background:white;
+padding:20px;
+border-radius:12px;
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
 }
 
-h1 {
-  font-size: 1.6rem;
-  text-align: center;
-  color: var(--cor-destaque);
-  margin-bottom: 1.2rem;
+h1{
+text-align:center;
+font-size:1.4rem;
+margin-bottom:20px;
 }
 
-label {
-  font-weight: 600;
-  margin-top: 1rem;
-  display: block;
-  color: var(--cor-destaque);
-  font-size: 1rem;
+label{
+font-weight:600;
+display:block;
+margin-top:12px;
 }
 
-select, input[type="text"] {
-  width: 100%;
-  height: auto;
-  padding: 0.8rem 1rem;
-  font-size: 1rem;
-  margin-top: 0.5rem;
-  border: 1px solid var(--cor-borda);
-  border-radius: 10px;
-  background-color: #fff;
-  color: var(--cor-texto);
-  transition: all 0.3s ease;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  box-sizing: border-box;
-  cursor: pointer;
+select,input{
+width:100%;
+padding:12px;
+margin-top:5px;
+border-radius:8px;
+border:1px solid var(--cor-borda);
+font-size:15px;
+box-sizing:border-box;
 }
 
-select:focus, input[type="text"]:focus {
-  background-color: var(--cor-hover);
-  outline: none;
+select:focus,input:focus{
+outline:none;
+background:var(--cor-hover);
 }
 
-#contato {
-  margin-top: 1.5rem;
+.representante{
+margin-top:15px;
+padding:15px;
+border-radius:10px;
+background:#f9fbfd;
+border:1px solid var(--cor-borda);
 }
 
-.representante {
-  padding: 1rem;
-  margin-bottom: 1rem;
-  background-color: #f9fbfd;
-  border-radius: 12px;
-  border: 1px solid var(--cor-borda);
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+.representante strong{
+font-size:16px;
 }
 
-.representante strong {
-  font-size: 1.1rem;
-  color: var(--cor-destaque);
+.representante span{
+display:block;
+margin-top:5px;
 }
 
-.representante span {
-  display: block;
-  margin-top: 0.3rem;
-  font-size: 1rem;
-  color: var(--cor-texto);
+.representante a{
+text-decoration:none;
+color:#000;
 }
 
-.representante a img {
-  width: 24px;
-  margin-right: 8px;
-  vertical-align: middle;
+.whats{
+display:inline-flex;
+align-items:center;
+gap:6px;
 }
 
-#btn-flutuante {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #11b611a4;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  cursor: pointer;
-  z-index: 9999;
-}
-#btn-flutuante img {
-  width: 32px;
-  height: 32px;
-}
-#btn-flutuante:hover {
-  background-color: #0e9e0e;
+.whats img{
+width:20px;
 }
 
-/* Responsividade */
-@media (max-width: 600px) {
-  .container {
-    width: 100%;
-    margin: 0;
-    padding: 1rem;
-    border-radius: 0;
-  }
-  h1 { font-size: 1.2rem; line-height: 1.4; }
-  label { font-size: 0.95rem; }
-  .representante strong { font-size: 1rem; }
-  .representante span { font-size: 0.9rem; }
-  .representante { padding: 0.8rem; margin-bottom: 0.8rem; }
-
-  #btn-flutuante {
-    width: 50px;
-    height: 50px;
-    bottom: 15px;
-    right: 15px;
-  }
-  #btn-flutuante img {
-    width: 28px;
-    height: 28px;
-  }
+#cidadeLista{
+max-height:180px;
+overflow-y:auto;
+border:1px solid #ddd;
+border-radius:8px;
+display:none;
+margin-top:5px;
+background:white;
 }
 
-@media (max-width: 400px) {
-  h1 { font-size: 1rem; }
-  label { font-size: 0.85rem; }
-  .representante strong { font-size: 0.9rem; }
-  .representante span { font-size: 0.8rem; }
+.cidade-item{
+padding:10px;
+cursor:pointer;
 }
-  </style>
+
+.cidade-item:hover{
+background:#f2f2f2;
+}
+
+#btn-flutuante{
+position:fixed;
+bottom:20px;
+right:20px;
+width:60px;
+height:60px;
+border-radius:50%;
+background:#11b611;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 4px 10px rgba(0,0,0,.3);
+}
+
+#btn-flutuante img{
+width:32px;
+}
+
+</style>
 </head>
+
 <body>
-  <header>
-    <a href="https://famossul.com.br/" target="_blank">
-      <img src="famossul-branco.png" alt="Famossul Cabeçalho" />
-    </a>
-  </header>
 
-  <main class="container">
-    <h1>Nossos canais de atendimento:</h1>
+<header>
+<a href="https://famossul.com.br/" target="_blank">
+<img src="famossul-branco.png">
+</a>
+</header>
 
-    <label for="area">Selecione a área:</label>
-    <select id="area" onchange="mostrarSubarea()">
-      <option value="">Selecione</option>
-      <option value="logistica">Logística</option>
-      <option value="rastreio">Rastreio</option>
-      <option value="sac">SAC</option>
-      <option value="comercial">Comercial</option>
-    </select>
+<main class="container">
 
-    <div id="subarea-container" style="display:none;">
-      <label for="subarea">Qual produto deseja adquirir?</label>
-      <select id="subarea" onchange="mostrarSubareaPortas()">
-        <option value="">Selecione</option>
-        <option value="portas">Portas e Componentes (Residencial/Laqueatto)</option>
-        <option value="forro">Forro Vinílico (Tetto Revest)</option>
-      </select>
-    </div>
+<h1>Nossos canais de atendimento</h1>
 
-    <div id="regiao-container" style="display:none;">
-      <label for="regiao">Região:</label>
-      <select id="regiao" onchange="carregarEstados()">
-        <option value="">Selecione uma região</option>
-      </select>
+<label>Área</label>
+<select id="area" onchange="mostrarSubarea()">
+<option value="">Selecione</option>
+<option value="logistica">Logística</option>
+<option value="rastreio">Rastreio</option>
+<option value="sac">SAC</option>
+<option value="comercial">Comercial</option>
+</select>
 
-      <label for="estado">Estado:</label>
-      <select id="estado" onchange="carregarCidades()">
-        <option value="">Selecione um estado</option>
-      </select>
+<div id="subarea-box" style="display:none">
 
-      <div id="cidade-container" style="display:none;">
-        <label for="cidade-search">Cidade:</label>
-        <input type="text" id="cidade-search" placeholder="Digite a cidade..."
-               list="lista-cidades" oninput="mostrarContato()" />
-        <datalist id="lista-cidades"></datalist>
-      </div>
-    </div>
+<label>Produto</label>
+<select id="subarea" onchange="mostrarSubareaPortas()">
+<option value="">Selecione</option>
+<option value="portas">Portas e Componentes</option>
+<option value="forro">Forro Vinílico</option>
+</select>
 
-    <div id="contato"></div>
-  </main>
+</div>
 
-  <a href="https://wa.me/5541995030522" target="_blank" id="btn-flutuante" aria-label="Atendimento WhatsApp" title="Atendimento WhatsApp">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Atendimento">
-  </a>
+<div id="regiao-box" style="display:none">
 
-  <script>
-    let dados = {
-      logistica: [
-        { nome: "Luan", telefone: "(47) 9998-9145", email: "logistica@famossul.com.br" },
-        { nome: "Mayron", telefone: "(41) 98813-9380", email: "logistica1@famossul.com.br" }
-      ],
-      rastreio: [
-        { nome: "Graziela", telefone: "(41) 99503-0522", email: "entregas@famossul.com.br" }
-      ],
-      sac: [
-        { nome: "Carlos/Maurici", telefone: "(41) 98895-7643", email: "tecnico@famossul.com.br" }
-      ],
-      comercial: {
-        portas: {},
-        forro: [
-          { nome: "Tetto Revest", telefone: "(41) 98727-9981", email: "vendas1@tettorevest.com.br" }
-        ]
-      }
-    };
+<label>Região</label>
+<select id="regiao" onchange="carregarEstados()"></select>
 
-    // 🔹 Carrega os representantes externos
-    fetch('representantes.json')
-      .then(res => res.json())
-      .then(json => {
-        dados.comercial.portas = json;
-        const regiaoSelect = document.getElementById("regiao");
-        Object.keys(json).sort().forEach(regiao => {
-          const opt = document.createElement("option");
-          opt.value = regiao;
-          opt.textContent = regiao;
-          regiaoSelect.appendChild(opt);
-        });
-      })
-      .catch(err => {
-        console.error("Erro ao carregar representantes:", err);
-        document.getElementById("contato").innerHTML =
-          "<p style='color:red;'>Não foi possível carregar os dados de representantes.</p>";
-      });
+<label>Estado</label>
+<select id="estado" onchange="carregarCidades()"></select>
 
-    function formatarTelefoneParaLink(telefone) {
-      const numero = telefone.replace(/\D/g, "");
-      return `https://wa.me/55${numero}`;
-    }
+<div id="cidade-box" style="display:none">
 
-    function mostrarSubarea() {
-      const area = document.getElementById("area").value;
-      const subareaContainer = document.getElementById("subarea-container");
-      const div = document.getElementById("contato");
-      div.innerHTML = "";
+<label>Cidade</label>
+<input type="text" id="cidadeBusca" placeholder="Digite a cidade">
 
-      if (area === "comercial") {
-        subareaContainer.style.display = "block";
-      } else {
-        subareaContainer.style.display = "none";
-        document.getElementById("regiao-container").style.display = "none";
-        mostrarContato();
-      }
-    }
+<div id="cidadeLista"></div>
 
-    function mostrarSubareaPortas() {
-      const subarea = document.getElementById("subarea").value;
-      const regiaoContainer = document.getElementById("regiao-container");
-      const div = document.getElementById("contato");
-      div.innerHTML = "";
+</div>
 
-      if (subarea === "portas") {
-        regiaoContainer.style.display = "block";
-      } else {
-        regiaoContainer.style.display = "none";
-        mostrarContato();
-      }
-    }
+</div>
 
-    function carregarEstados() {
-      const regiao = document.getElementById("regiao").value;
-      const estadoSelect = document.getElementById("estado");
-      estadoSelect.innerHTML = '<option value="">Selecione um estado</option>';
-      document.getElementById("lista-cidades").innerHTML = "";
-      document.getElementById("contato").innerHTML = "";
+<div id="contato"></div>
 
-      if (regiao && dados.comercial.portas[regiao]) {
-        Object.keys(dados.comercial.portas[regiao]).sort().forEach(estado => {
-          const opt = document.createElement("option");
-          opt.value = estado;
-          opt.textContent = estado;
-          estadoSelect.appendChild(opt);
-        });
-      }
-    }
+</main>
 
-    function carregarCidades() {
-      const regiao = document.getElementById("regiao").value;
-      const estado = document.getElementById("estado").value;
-      const lista = document.getElementById("lista-cidades");
-      lista.innerHTML = "";
-      document.getElementById("contato").innerHTML = "";
+<a href="https://wa.me/5541995030522" target="_blank" id="btn-flutuante">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+</a>
 
-      if (regiao && estado && dados.comercial.portas[regiao][estado]) {
-        Object.keys(dados.comercial.portas[regiao][estado]).sort().forEach(cidade => {
-          const opt = document.createElement("option");
-          opt.value = cidade;
-          lista.appendChild(opt);
-        });
-        document.getElementById("cidade-container").style.display = "block";
-      } else {
-        document.getElementById("cidade-container").style.display = "none";
-      }
-    }
+<script>
 
-    function mostrarContato() {
-      const area = document.getElementById("area").value;
-      const subarea = document.getElementById("subarea").value;
-      const regiao = document.getElementById("regiao")?.value || "";
-      const estado = document.getElementById("estado")?.value || "";
-      const cidade = document.getElementById("cidade-search")?.value || "";
-      const div = document.getElementById("contato");
-      div.innerHTML = "";
+let dados={
+logistica:[
+{nome:"Luan",telefone:"(47)9998-9145",email:"logistica@famossul.com.br"},
+{nome:"Mayron",telefone:"(41)98813-9380",email:"logistica1@famossul.com.br"}
+],
+rastreio:[
+{nome:"Graziela",telefone:"(41)99503-0522",email:"entregas@famossul.com.br"}
+],
+sac:[
+{nome:"Carlos/Maurici",telefone:"(41)98895-7643",email:"tecnico@famossul.com.br"}
+],
+comercial:{
+portas:{},
+forro:[
+{nome:"Tetto Revest",telefone:"(41)98727-9981",email:"vendas1@tettorevest.com.br"}
+]
+}
+}
 
-      if (area && area !== "comercial" && dados[area]) {
-        div.innerHTML = dados[area].map(rep => renderRepresentante(rep)).join("");
-      }
+fetch("representantes.json")
+.then(r=>r.json())
+.then(json=>{
+dados.comercial.portas=json
 
-      if (area === "comercial" && subarea) {
-        if (subarea === "portas" && regiao && estado && cidade) {
-          const reps = dados.comercial.portas[regiao][estado][cidade];
-          if (reps) {
-            div.innerHTML = reps.map(rep => renderRepresentante(rep)).join("");
-          } else {
-            div.innerHTML = "<p style='color:red;'>Cidade não encontrada.</p>";
-          }
-        } else if (subarea === "forro") {
-          const reps = dados.comercial.forro;
-          div.innerHTML = reps.map(rep => renderRepresentante(rep)).join("");
-        }
-      }
-    }
+let regiaoSelect=document.getElementById("regiao")
 
-    function renderRepresentante(rep) {
-      return `
-        <div class="representante">
-          <strong>${rep.nome}</strong>
-          <span>
-            <a href="${formatarTelefoneParaLink(rep.telefone)}" target="_blank">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-                   alt="WhatsApp" width="20" style="vertical-align:middle; margin-right:5px;">
-              ${rep.telefone}
-            </a>
-          </span>
-          ${rep.email ? `<span>📧 <a href="mailto:${rep.email}">${rep.email}</a></span>` : ""}
-        </div>
-      `;
-    }
-  </script>
+regiaoSelect.innerHTML='<option value="">Selecione</option>'
+
+Object.keys(json).sort().forEach(r=>{
+let o=document.createElement("option")
+o.value=r
+o.textContent=r
+regiaoSelect.appendChild(o)
+})
+})
+
+function mostrarSubarea(){
+
+let area=areaSelect.value
+contato.innerHTML=""
+
+if(area==="comercial")
+subareaBox.style.display="block"
+else{
+subareaBox.style.display="none"
+regiaoBox.style.display="none"
+mostrarContato()
+}
+
+}
+
+function mostrarSubareaPortas(){
+
+let sub=subarea.value
+
+if(sub==="portas")
+regiaoBox.style.display="block"
+else{
+regiaoBox.style.display="none"
+mostrarContato()
+}
+
+}
+
+function carregarEstados(){
+
+estado.innerHTML='<option value="">Selecione</option>'
+
+let r=regiao.value
+
+Object.keys(dados.comercial.portas[r]).forEach(e=>{
+let o=document.createElement("option")
+o.value=e
+o.textContent=e
+estado.appendChild(o)
+})
+
+}
+
+function carregarCidades(){
+
+cidadeBox.style.display="block"
+
+let r=regiao.value
+let e=estado.value
+
+window.listaCidades=Object.keys(dados.comercial.portas[r][e]).sort()
+
+mostrarListaCidades(listaCidades)
+
+}
+
+cidadeBusca.addEventListener("input",()=>{
+
+let filtro=cidadeBusca.value.toLowerCase()
+
+let filtradas=listaCidades.filter(c=>c.toLowerCase().includes(filtro))
+
+mostrarListaCidades(filtradas)
+
+})
+
+function mostrarListaCidades(lista){
+
+cidadeLista.innerHTML=""
+
+lista.forEach(c=>{
+
+let div=document.createElement("div")
+div.className="cidade-item"
+div.textContent=c
+
+div.onclick=()=>{
+
+cidadeBusca.value=c
+cidadeLista.style.display="none"
+
+mostrarContato()
+
+}
+
+cidadeLista.appendChild(div)
+
+})
+
+cidadeLista.style.display="block"
+
+}
+
+function mostrarContato(){
+
+contato.innerHTML=""
+
+let area=areaSelect.value
+
+if(area!=="comercial"){
+dados[area].forEach(r=>contato.innerHTML+=card(r))
+return
+}
+
+if(subarea.value==="forro"){
+dados.comercial.forro.forEach(r=>contato.innerHTML+=card(r))
+return
+}
+
+let r=regiao.value
+let e=estado.value
+let c=cidadeBusca.value
+
+if(!r||!e||!c) return
+
+let reps=dados.comercial.portas[r][e][c]
+
+if(reps)
+reps.forEach(rep=>contato.innerHTML+=card(rep))
+else
+contato.innerHTML="<p>Cidade não encontrada</p>"
+
+}
+
+function card(rep){
+
+let numero=rep.telefone.replace(/\D/g,"")
+
+return`
+
+<div class="representante">
+
+<strong>${rep.nome}</strong>
+
+<span class="whats">
+<a target="_blank" href="https://wa.me/55${numero}">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+${rep.telefone}
+</a>
+</span>
+
+${rep.email?`<span>📧 <a href="mailto:${rep.email}">${rep.email}</a></span>`:""}
+
+</div>
+
+`
+
+}
+
+</script>
+
 </body>
 </html>
