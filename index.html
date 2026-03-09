@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,7 +10,7 @@
 <style>
 
 :root{
---cor1:#11b611;
+--verde:#11b611;
 --fundo:#e4e4e4;
 --card:#ffffff;
 --borda:#dcdcdc;
@@ -23,13 +24,13 @@ background:var(--fundo);
 
 header{
 background:white;
-padding:12px;
+padding:14px;
 text-align:center;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
+box-shadow:0 2px 8px rgba(0,0,0,.1);
 }
 
 header img{
-max-width:180px;
+max-width:170px;
 }
 
 .container{
@@ -37,10 +38,10 @@ width:92%;
 max-width:520px;
 margin:auto;
 margin-top:15px;
-background:var(--card);
+background:white;
 padding:22px;
 border-radius:12px;
-box-shadow:0 4px 12px rgba(0,0,0,0.08);
+box-shadow:0 4px 12px rgba(0,0,0,.08);
 }
 
 h1{
@@ -55,7 +56,7 @@ margin-top:12px;
 font-weight:600;
 }
 
-select,input{
+input,select{
 width:100%;
 padding:12px;
 margin-top:6px;
@@ -65,37 +66,7 @@ font-size:15px;
 box-sizing:border-box;
 }
 
-.representante{
-margin-top:15px;
-padding:15px;
-border-radius:10px;
-border:1px solid var(--borda);
-background:#fafafa;
-}
-
-.representante strong{
-font-size:16px;
-}
-
-.representante span{
-display:block;
-margin-top:5px;
-}
-
-.representante a{
-text-decoration:none;
-color:black;
-}
-
-.whats{
-display:flex;
-align-items:center;
-gap:6px;
-}
-
-.whats img{
-width:20px;
-}
+/* lista cidades */
 
 .lista-cidades{
 position:relative;
@@ -122,13 +93,85 @@ cursor:pointer;
 background:#f0f0f0;
 }
 
+/* mensagem */
+
+.mensagem{
+margin-top:18px;
+padding:16px;
+background:#f4fff4;
+border:1px solid #bfe6bf;
+border-left:6px solid var(--verde);
+border-radius:10px;
+text-align:center;
+display:none;
+}
+
+/* card */
+
+.card{
+margin-top:15px;
+padding:16px;
+border-radius:12px;
+border:1px solid var(--borda);
+background:#fafafa;
+}
+
+.card strong{
+font-size:17px;
+}
+
+.card span{
+display:block;
+margin-top:6px;
+}
+
+.card a{
+text-decoration:none;
+color:black;
+}
+
+/* botões */
+
+.acoes{
+margin-top:10px;
+display:flex;
+gap:8px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:6px 10px;
+border-radius:6px;
+font-size:13px;
+border:1px solid var(--borda);
+background:white;
+cursor:pointer;
+}
+
+.btn:hover{
+background:#f0f0f0;
+}
+
+.whats{
+display:flex;
+align-items:center;
+gap:8px;
+font-weight:500;
+}
+
+.whats img{
+width:22px;
+}
+
+/* botão flutuante */
+
 #btn-flutuante{
 position:fixed;
 bottom:20px;
 right:20px;
 width:60px;
 height:60px;
-background:var(--cor1);
+background:var(--verde);
 border-radius:50%;
 display:flex;
 align-items:center;
@@ -164,43 +207,19 @@ width:32px;
 <option value="comercial">Comercial</option>
 </select>
 
-<div id="subarea-box" style="display:none">
+<div id="buscaCidadeBox" style="display:none">
 
-<label>Produto</label>
-<select id="subarea">
-<option value="">Selecione</option>
-<option value="portas">Portas e Componentes</option>
-<option value="forro">Forro Vinílico</option>
-</select>
-
-</div>
-
-<div id="regiao-box" style="display:none">
-
-<label>Região</label>
-<select id="regiao">
-<option value="">Selecione</option>
-</select>
-
-<label>Estado</label>
-<select id="estado">
-<option value="">Selecione</option>
-</select>
-
-<div id="cidade-box" style="display:none">
-
-<label>Cidade</label>
+<label>Buscar cidade</label>
 
 <div class="lista-cidades">
-
-<input id="cidadeBusca" placeholder="Digite a cidade">
-
+<input id="cidadeBusca" placeholder="Digite sua cidade">
 <div id="cidadeLista"></div>
-
 </div>
 
 </div>
 
+<div id="mensagem" class="mensagem">
+Agradecemos seu contato! Segue abaixo o contato de nosso representante mais próximo para melhor atendê-lo(a).
 </div>
 
 <div id="contato"></div>
@@ -214,49 +233,38 @@ width:32px;
 <script>
 
 const area=document.getElementById("area")
-const subarea=document.getElementById("subarea")
-const regiao=document.getElementById("regiao")
-const estado=document.getElementById("estado")
 const cidadeBusca=document.getElementById("cidadeBusca")
-
-const subareaBox=document.getElementById("subarea-box")
-const regiaoBox=document.getElementById("regiao-box")
-const cidadeBox=document.getElementById("cidade-box")
-
 const cidadeLista=document.getElementById("cidadeLista")
-const contato=document.getElementById("contato")
+const buscaCidadeBox=document.getElementById("buscaCidadeBox")
 
-let listaCidades=[]
+const contato=document.getElementById("contato")
+const mensagem=document.getElementById("mensagem")
+
 let dados
+let cidades=[]
 
 fetch("representantes.json")
 .then(r=>r.json())
 .then(json=>{
 
-dados={
-logistica:[
-{nome:"Luan",telefone:"(47)9998-9145",email:"logistica@famossul.com.br"},
-{nome:"Mayron",telefone:"(41)98813-9380",email:"logistica1@famossul.com.br"}
-],
-rastreio:[
-{nome:"Graziela",telefone:"(41)99503-0522",email:"entregas@famossul.com.br"}
-],
-sac:[
-{nome:"Carlos/Maurici",telefone:"(41)98895-7643",email:"tecnico@famossul.com.br"}
-],
-comercial:{
-portas:json,
-forro:[
-{nome:"Tetto Revest",telefone:"(41)98727-9981",email:"vendas1@tettorevest.com.br"}
-]
-}
-}
+dados=json
 
-Object.keys(json).sort().forEach(r=>{
-let o=document.createElement("option")
-o.value=r
-o.textContent=r
-regiao.appendChild(o)
+Object.keys(json).forEach(regiao=>{
+
+Object.keys(json[regiao]).forEach(estado=>{
+
+Object.keys(json[regiao][estado]).forEach(cidade=>{
+
+cidades.push({
+cidade:cidade,
+estado:estado,
+regiao:regiao
+})
+
+})
+
+})
+
 })
 
 })
@@ -264,56 +272,35 @@ regiao.appendChild(o)
 area.onchange=()=>{
 
 contato.innerHTML=""
+mensagem.style.display="none"
 
 if(area.value==="comercial")
-subareaBox.style.display="block"
+buscaCidadeBox.style.display="block"
 else{
-subareaBox.style.display="none"
-regiaoBox.style.display="none"
-mostrarContato()
+buscaCidadeBox.style.display="none"
+mostrarAreaSimples()
 }
 
 }
 
-subarea.onchange=()=>{
+function mostrarAreaSimples(){
 
-contato.innerHTML=""
-
-if(subarea.value==="portas")
-regiaoBox.style.display="block"
-else{
-regiaoBox.style.display="none"
-mostrarContato()
+const dadosFixos={
+logistica:[
+{nome:"Luan",telefone:"4799989145",email:"logistica@famossul.com.br"},
+{nome:"Mayron",telefone:"41988139380",email:"logistica1@famossul.com.br"}
+],
+rastreio:[
+{nome:"Graziela",telefone:"41995030522",email:"entregas@famossul.com.br"}
+],
+sac:[
+{nome:"Carlos",telefone:"41988957643",email:"tecnico@famossul.com.br"}
+]
 }
 
-}
+dadosFixos[area.value].forEach(r=>contato.innerHTML+=card(r))
 
-regiao.onchange=()=>{
-
-estado.innerHTML='<option value="">Selecione</option>'
-
-let r=regiao.value
-if(!r)return
-
-Object.keys(dados.comercial.portas[r]).forEach(e=>{
-let o=document.createElement("option")
-o.value=e
-o.textContent=e
-estado.appendChild(o)
-})
-
-}
-
-estado.onchange=()=>{
-
-cidadeBox.style.display="block"
-
-let r=regiao.value
-let e=estado.value
-
-listaCidades=Object.keys(dados.comercial.portas[r][e]).sort()
-
-mostrarLista(listaCidades)
+mensagem.style.display="block"
 
 }
 
@@ -321,27 +308,25 @@ cidadeBusca.oninput=()=>{
 
 let termo=cidadeBusca.value.toLowerCase()
 
-let filtradas=listaCidades.filter(c=>c.toLowerCase().includes(termo))
-
-mostrarLista(filtradas.slice(0,50))
-
-}
-
-function mostrarLista(lista){
+let filtradas=cidades.filter(c=>
+c.cidade.toLowerCase().includes(termo)
+).slice(0,50)
 
 cidadeLista.innerHTML=""
 
-lista.forEach(c=>{
+filtradas.forEach(c=>{
 
 let div=document.createElement("div")
+
 div.className="cidade-item"
-div.textContent=c
+div.textContent=c.cidade+" - "+c.estado
 
 div.onclick=()=>{
 
-cidadeBusca.value=c
+cidadeBusca.value=c.cidade
 cidadeLista.style.display="none"
-mostrarContato()
+
+mostrarRepresentantes(c)
 
 }
 
@@ -353,43 +338,27 @@ cidadeLista.style.display="block"
 
 }
 
-document.addEventListener("click",(e)=>{
-
-if(!cidadeLista.contains(e.target) && e.target!==cidadeBusca)
-cidadeLista.style.display="none"
-
-})
-
-function mostrarContato(){
+function mostrarRepresentantes(local){
 
 contato.innerHTML=""
 
-if(area.value!=="comercial"){
+let reps=dados[local.regiao][local.estado][local.cidade]
 
-dados[area.value].forEach(r=>contato.innerHTML+=card(r))
-return
+mensagem.style.display="block"
+
+reps.forEach(rep=>{
+
+contato.innerHTML+=card(rep)
+
+})
+
 }
 
-if(subarea.value==="forro"){
+function copiar(texto){
 
-dados.comercial.forro.forEach(r=>contato.innerHTML+=card(r))
-return
-}
+navigator.clipboard.writeText(texto)
 
-let r=regiao.value
-let e=estado.value
-let c=cidadeBusca.value
-
-if(!r||!e||!c)return
-
-let reps=dados.comercial.portas[r][e][c]
-
-if(!reps){
-contato.innerHTML="<p>Cidade não encontrada</p>"
-return
-}
-
-reps.forEach(rep=>contato.innerHTML+=card(rep))
+alert("Copiado!")
 
 }
 
@@ -397,20 +366,34 @@ function card(rep){
 
 let numero=rep.telefone.replace(/\D/g,"")
 
+let msg=encodeURIComponent("Olá, gostaria de atendimento.")
+
 return `
 
-<div class="representante">
+<div class="card">
 
 <strong>${rep.nome}</strong>
 
 <span class="whats">
-<a target="_blank" href="https://wa.me/55${numero}">
+<a target="_blank" href="https://wa.me/55${numero}?text=${msg}">
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
 ${rep.telefone}
 </a>
 </span>
 
-${rep.email?`<span>📧 <a href="mailto:${rep.email}">${rep.email}</a></span>`:""}
+${rep.email ? `<span>📧 <a href="mailto:${rep.email}">${rep.email}</a></span>` : ""}
+
+<div class="acoes">
+
+<button class="btn" onclick="copiar('${rep.telefone}')">
+Copiar telefone
+</button>
+
+${rep.email ? `<button class="btn" onclick="copiar('${rep.email}')">
+Copiar email
+</button>` : ""}
+
+</div>
 
 </div>
 
