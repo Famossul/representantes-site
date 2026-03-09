@@ -130,7 +130,18 @@ text-decoration:none;
 color:black;
 }
 
-/* botões */
+.whats{
+display:flex;
+align-items:center;
+gap:8px;
+font-weight:500;
+}
+
+.whats img{
+width:22px;
+}
+
+/* ações */
 
 .acoes{
 margin-top:10px;
@@ -152,18 +163,7 @@ cursor:pointer;
 background:#f0f0f0;
 }
 
-.whats{
-display:flex;
-align-items:center;
-gap:8px;
-font-weight:500;
-}
-
-.whats img{
-width:22px;
-}
-
-/* botão flutuante */
+/* botão whatsapp */
 
 #btn-flutuante{
 position:fixed;
@@ -207,6 +207,18 @@ width:32px;
 <option value="comercial">Comercial</option>
 </select>
 
+<div id="subareaBox" style="display:none">
+
+<label>Produto</label>
+
+<select id="subarea">
+<option value="">Selecione</option>
+<option value="portas">Portas e Componentes</option>
+<option value="forro">Forro Vinílico</option>
+</select>
+
+</div>
+
 <div id="buscaCidadeBox" style="display:none">
 
 <label>Buscar cidade</label>
@@ -233,9 +245,13 @@ Agradecemos seu contato! Segue abaixo o contato de nosso representante mais pró
 <script>
 
 const area=document.getElementById("area")
+const subarea=document.getElementById("subarea")
+
+const subareaBox=document.getElementById("subareaBox")
+const buscaCidadeBox=document.getElementById("buscaCidadeBox")
+
 const cidadeBusca=document.getElementById("cidadeBusca")
 const cidadeLista=document.getElementById("cidadeLista")
-const buscaCidadeBox=document.getElementById("buscaCidadeBox")
 
 const contato=document.getElementById("contato")
 const mensagem=document.getElementById("mensagem")
@@ -274,11 +290,38 @@ area.onchange=()=>{
 contato.innerHTML=""
 mensagem.style.display="none"
 
-if(area.value==="comercial")
-buscaCidadeBox.style.display="block"
-else{
+if(area.value==="comercial"){
+
+subareaBox.style.display="block"
+
+}else{
+
+subareaBox.style.display="none"
 buscaCidadeBox.style.display="none"
+
 mostrarAreaSimples()
+
+}
+
+}
+
+subarea.onchange=()=>{
+
+contato.innerHTML=""
+mensagem.style.display="none"
+
+if(subarea.value==="portas"){
+
+buscaCidadeBox.style.display="block"
+
+}
+
+if(subarea.value==="forro"){
+
+buscaCidadeBox.style.display="none"
+
+mostrarForro()
+
 }
 
 }
@@ -301,6 +344,26 @@ sac:[
 dadosFixos[area.value].forEach(r=>contato.innerHTML+=card(r))
 
 mensagem.style.display="block"
+
+}
+
+function mostrarForro(){
+
+const reps=[
+{
+nome:"Tetto Revest",
+telefone:"41987279981",
+email:"vendas1@tettorevest.com.br"
+}
+]
+
+mensagem.style.display="block"
+
+reps.forEach(rep=>{
+
+contato.innerHTML+=card(rep)
+
+})
 
 }
 
