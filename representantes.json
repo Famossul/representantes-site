@@ -4782,8 +4782,8 @@
         "email": "jair@enobre.com.br",
         "responsavel": "Manu"
       }
-    ]
-  },
+    ],
+
   "Rio Branco do Sul": [
       {
         "nome": "Waldemar",
@@ -4919,7 +4919,9 @@
         "email": "jair@enobre.com.br",
         "responsavel": "Manu"
       }
-    ],
+    ]
+    },
+    
     "SC": {
       "Água Doce": [
     {
